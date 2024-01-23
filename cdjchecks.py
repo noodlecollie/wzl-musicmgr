@@ -32,6 +32,13 @@ def parseArgs():
 	)
 
 	parser.add_argument(
+		"--absolute-paths",
+		action="store_true",
+		help="If set, file paths reported via --list-files will be absolute; otherwise, they will be relative to their "
+		"root directory."
+	)
+
+	parser.add_argument(
 		"dirs",
 		nargs="*",
 		help="One or more directories to scan recursively. Relative paths are treated as being relative to the "
@@ -66,7 +73,7 @@ def main():
 	configFile = loadConfig()
 	paths = computePaths(configFile, args.dirs) if args.dirs else [configFile.getDJDirPath()]
 
-	filesToProcess = []
+	filesToProcess = {}
 
 	for inputPath in paths:
 		print("Checking:", inputPath)
@@ -79,7 +86,8 @@ def main():
 				if not os.path.splitext(file)[1] in EXTENSIONS_TO_CHECK:
 					continue
 
-				filesToProcess.append(os.path.realpath(os.path.join(root, file)))
+				fileAbsPath = os.path.realpath(os.path.join(root, file))
+				filesToProcess[fileAbsPath] = os.path.relpath(fileAbsPath, inputPath)
 
 	print(f"Found {len(filesToProcess)} files to validate")
 
@@ -88,14 +96,15 @@ def main():
 
 	results = {}
 
-	for file in filesToProcess:
-		extension = os.path.splitext(file)[1]
+	for fileKey in filesToProcess:
+		extension = os.path.splitext(fileKey)[1]
+		filePath = fileKey if args.absolute_paths else filesToProcess[fileKey]
 
 		if extension not in WELL_SUPPORTED_EXTENSIONS:
-			addResult(results, "File format not supported", file)
+			addResult(results, "File format not supported", filePath)
 
 		if extension != ".mp3":
-			addResult(results, "Not an MP3", file)
+			addResult(results, "Not an MP3", filePath)
 
 	if not results:
 		print("All files validated")
@@ -110,6 +119,7 @@ def main():
 		if args.list_files:
 			for value in values:
 				print(f"    {value}")
+		print()
 
 	sys.exit(1)
 
