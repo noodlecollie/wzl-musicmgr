@@ -1,7 +1,7 @@
 import argparse
 import os
 import sys
-from lib import config
+from lib import config, validation
 
 SCRIPT_DIR = os.path.realpath(os.path.dirname(__file__))
 
@@ -97,14 +97,11 @@ def main():
 	results = {}
 
 	for fileKey in filesToProcess:
-		extension = os.path.splitext(fileKey)[1]
 		filePath = fileKey if args.absolute_paths else filesToProcess[fileKey]
+		validationErrors = validation.validateFile(fileKey)
 
-		if extension not in WELL_SUPPORTED_EXTENSIONS:
-			addResult(results, "File format not supported", filePath)
-
-		if extension != ".mp3":
-			addResult(results, "Not an MP3", filePath)
+		for error in validationErrors:
+			addResult(results, error, filePath)
 
 	if not results:
 		print("All files validated")
@@ -119,7 +116,7 @@ def main():
 		if args.list_files:
 			for value in values:
 				print(f"    {value}")
-		print()
+			print()
 
 	sys.exit(1)
 
