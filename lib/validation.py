@@ -7,6 +7,11 @@ WELL_SUPPORTED_FORMATS = [
 	".aiff"
 ]
 
+ALL_MEDIA_FORMATS = WELL_SUPPORTED_FORMATS + [
+	".ogg",
+	".wma"
+]
+
 NOT_AN_MP3 = "Not an MP3"
 UNSUPPORTED_FORMAT = "Unsupported file format"
 

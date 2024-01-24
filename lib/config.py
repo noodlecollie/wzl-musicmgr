@@ -7,6 +7,7 @@ class Config:
 		self.__personalDir:str = ""
 		self.__djDir:str = ""
 		self.__draftDir:str = ""
+		self.__ffmpeg = None
 
 		self.__loadJSON(configFilePath)
 
@@ -31,6 +32,9 @@ class Config:
 	def getDraftDirPath(self) -> str:
 		return self.__makePath(self.__draftDir)
 
+	def getFFMPEGOverridePath():
+		return self.__ffmpeg
+
 	def __makePath(self, path:str):
 		return path if os.path.isabs(path) else os.path.join(self.getBaseDirPath(), path)
 
@@ -41,9 +45,13 @@ class Config:
 			self.__personalDir = self.__tryRead(contents, "personal", str)
 			self.__djDir = self.__tryRead(contents, "dj", str)
 			self.__draftDir = self.__tryRead(contents, "draft", str)
+			self.__ffmpeg = self.__tryRead(contents, "ffmpeg", str, optional=True)
 
-	def __tryRead(self, jsonObj:dict, prop:str, valueType:type):
+	def __tryRead(self, jsonObj:dict, prop:str, valueType:type, optional:bool=False):
 		if prop not in jsonObj:
+			if optional:
+				return None
+
 			raise KeyError(f'Config JSON did not contain required property "{prop}"')
 
 		value = jsonObj[prop]
