@@ -5,18 +5,6 @@ from lib import config, validation
 
 SCRIPT_DIR = os.path.realpath(os.path.dirname(__file__))
 
-WELL_SUPPORTED_EXTENSIONS = [
-	".mp3",
-	".flac",
-	".wav",
-	".aiff"
-]
-
-EXTENSIONS_TO_CHECK = WELL_SUPPORTED_EXTENSIONS + [
-	".ogg",
-	".wma"
-]
-
 def parseArgs():
 	parser = argparse.ArgumentParser(
 		"checkdj",
@@ -83,7 +71,7 @@ def main():
 
 		for root, dirs, files in os.walk(inputPath):
 			for file in files:
-				if not os.path.splitext(file)[1] in EXTENSIONS_TO_CHECK:
+				if not os.path.splitext(file)[1] in validation.ALL_MEDIA_FORMATS:
 					continue
 
 				fileAbsPath = os.path.realpath(os.path.join(root, file))
