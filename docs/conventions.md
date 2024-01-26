@@ -48,3 +48,13 @@ Hot cues can be assigned colours, which should be categorised as follows:
 * **Pink**: Breakdown or build-up without percussion and with vocals
 
 Think of green representing percussion, blue representing no percussion, and red representing vocals. Adding red to green in RGB space gives yellow, and adding it to blue gives pink.
+
+# Energy Levels
+
+Star ratings are used to denote energy levels for tracks. The levels are based loosely around the following examples:
+
+* 1 star: London Grammar - If You Wait (Calibre Alternate Remix)
+* 2 stars: Nu:Tone - The Moment
+* 3 stars: Logistics - Cascades Of Colour
+* 4 stars: High Contrast - Racing Green
+* 5 stars: Netsky - Love Has Gone

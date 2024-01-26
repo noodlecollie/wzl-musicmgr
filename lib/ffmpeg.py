@@ -1,5 +1,5 @@
 import subprocess
-from . import config
+import config
 
 def runFFMPEG(configFile:config.Config, args:list):
 	ffmpeg = configFile.getFFMPEGOverridePath()

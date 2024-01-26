@@ -19,7 +19,7 @@ EXTENSIONS_TO_CHECK = WELL_SUPPORTED_EXTENSIONS + [
 
 def parseArgs():
 	parser = argparse.ArgumentParser(
-		"cdjchecks",
+		"checkdj",
 		description="Runs validation checks on a directory to search for potential library compatibility issues with "
 		"CDJ controllers."
 	)
@@ -42,7 +42,7 @@ def parseArgs():
 		"dirs",
 		nargs="*",
 		help="One or more directories to scan recursively. Relative paths are treated as being relative to the "
-		"library config file. If no paths are specified, the configured DJ directory is used."
+		"directory which holds the library config file. If no paths are specified, the configured DJ directory is used."
 	)
 
 	return parser.parse_args()
