@@ -58,32 +58,34 @@ def prunePathsOutsideRoot(root:str, paths:list):
 	return outPaths
 
 def fileTypeIsSupported(path:str):
-	return os.path.splitext(path)[1] in validation.ALL_MEDIA_FORMATS
+	return os.path.splitext(path)[1] in validation.ALL_MEDIA_FORMATS and not os.path.basename(path).startswith(".")
 
-def findFilesInDirectory(path:str):
-	if os.path.isfile(path):
-		return [path]
+def findFilesInDirectory(absPath:str):
+	if os.path.isfile(absPath):
+		return [absPath]
 
 	outFiles = []
 
-	if os.path.isdir(path):
-		for contents in os.listdir(path):
-			if os.path.isfile(os.path.join(path, contents)) and fileTypeIsSupported(contents):
-				outFiles.append(contents)
+	if os.path.isdir(absPath):
+		for contents in os.listdir(absPath):
+			fullPath = os.path.join(absPath, contents)
+
+			if os.path.isfile(fullPath) and fileTypeIsSupported(contents):
+				outFiles.append(fullPath)
 
 	return outFiles
 
-def findFilesResursively(path: str):
-	if os.path.isfile(path):
-		return [path]
+def findFilesResursively(absPath: str):
+	if os.path.isfile(absPath):
+		return [absPath]
 
 	outFiles = []
 
-	if os.path.isdir(path):
-		for root, dirs, files in os.walk(path):
+	if os.path.isdir(absPath):
+		for root, dirs, files in os.walk(absPath):
 			for file in files:
 				if fileTypeIsSupported(file):
-					outFiles.append(os.path.join(path, file))
+					outFiles.append(os.path.join(root, file))
 
 	return outFiles
 
@@ -102,24 +104,24 @@ def buildTargetFileList(root:str, paths:list, recursive:bool):
 			resolvedPaths = findFilesInDirectory(absPath)
 
 		for resolvedPath in resolvedPaths:
-			filePaths[resolvedPath] = True
+			filePaths[os.path.relpath(resolvedPath, root)] = True
 
 	return list(filePaths.keys())
 
 def main():
 	args = parseArgs()
+	configFile = loadConfig()
 
-	if not args.input_root or not args.output_root:
-		configFile = loadConfig()
+	if not args.input_root:
+		args.input_root = configFile.getPersonalDirPath()
 
-		if not args.input_root:
-			args.input_root = configFile.getPersonalDirPath()
-
-		if not args.output_root:
-			args.output_root = configFile.getDJDirPath()
+	if not args.output_root:
+		args.output_root = configFile.getDJDirPath()
 
 	paths = prunePathsOutsideRoot(args.input_root, args.files)
-	files = buildTargetFileList(args.input_root, args.files, args.recursive)
+	filesInInputRoot = buildTargetFileList(args.input_root, args.files, args.recursive)
+
+	# TODO: Continue from here
 
 if __name__ != "__main__":
 	raise RuntimeError("Expected file to be run as a script")

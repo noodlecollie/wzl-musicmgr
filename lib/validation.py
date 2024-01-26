@@ -2,8 +2,7 @@ import os
 from . import id3
 
 try:
-	import mutagen.mp3 as mp3
-	from mutagen import File
+	from mutagen import id3 as mutID3, mp3, File
 except ModuleNotFoundError:
 	print("Mutagen was not found - run `python3 -m pip install mutagen`")
 	raise
@@ -27,6 +26,7 @@ UNSUPPORTED_FORMAT = "Unsupported file format"
 OVER_TEN_MINUTES_LONG = "Over 10 minutes long"
 MP3_LESS_THAN_320K = "MP3 bitrate less than 320k"
 MISSING_BASIC_METADATA = "Missing basic metadata"
+INVALID_DATA = "File data was not valid"
 UNEXPECTED_ERROR = "Unexpected error during validation"
 
 BASIC_METADATA_FRAMES = {
@@ -39,6 +39,21 @@ def __fileIsMissingBasicTags(filePath:str) -> list:
 	tags = set(id3.dump_tag_string_dict(filePath).keys())
 	minTags = set(BASIC_METADATA_FRAMES.keys())
 	return bool(set(minTags - tags))
+
+def __performChecksOnFileContents(filePath:str, extension:str) -> list:
+	validationErrors = []
+
+	if extension in WELL_SUPPORTED_FORMATS:
+		if __fileIsMissingBasicTags(filePath):
+			validationErrors.append(MISSING_BASIC_METADATA)
+
+		if File(filePath).info.length > 10 * 60:
+			validationErrors.append(OVER_TEN_MINUTES_LONG)
+
+	if extension == ".mp3" and mp3.MP3(filePath).info.bitrate < 320000:
+		validationErrors.append(MP3_LESS_THAN_320K)
+
+	return validationErrors
 
 def validateFile(filePath:str, logExceptions=True) -> list:
 	validationErrors = []
@@ -63,16 +78,10 @@ def validateFile(filePath:str, logExceptions=True) -> list:
 			# so quit here if it does not.
 			return validationErrors
 
-		if extension in WELL_SUPPORTED_FORMATS:
-			if __fileIsMissingBasicTags(filePath):
-				validationErrors.append(MISSING_BASIC_METADATA)
+		validationErrors += __performChecksOnFileContents(filePath, extension)
 
-			if File(filePath).info.length > 10 * 60:
-				validationErrors.append(OVER_TEN_MINUTES_LONG)
-
-		if extension == ".mp3" and mp3.MP3(filePath).info.bitrate < 320000:
-			validationErrors.append(MP3_LESS_THAN_320K)
-
+	except mutID3.ID3NoHeaderError:
+		validationErrors.append(INVALID_DATA)
 	except Exception as ex:
 		if logExceptions:
 			print(f'validate_file(): Unexpected exception when validating "{filePath}": {ex}')
