@@ -44,14 +44,15 @@ def __performChecksOnFileContents(filePath:str, extension:str) -> list:
 	validationErrors = []
 
 	if extension in WELL_SUPPORTED_FORMATS:
-		if __fileIsMissingBasicTags(filePath):
-			validationErrors.append(MISSING_BASIC_METADATA)
-
 		if File(filePath).info.length > 10 * 60:
 			validationErrors.append(OVER_TEN_MINUTES_LONG)
 
-	if extension == ".mp3" and mp3.MP3(filePath).info.bitrate < 320000:
-		validationErrors.append(MP3_LESS_THAN_320K)
+	if extension == ".mp3":
+		if mp3.MP3(filePath).info.bitrate < 320000:
+			validationErrors.append(MP3_LESS_THAN_320K)
+
+		if __fileIsMissingBasicTags(filePath):
+			validationErrors.append(MISSING_BASIC_METADATA)
 
 	return validationErrors
 
