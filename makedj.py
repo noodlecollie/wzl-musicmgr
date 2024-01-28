@@ -43,6 +43,12 @@ def parseArgs():
 		"performed, so that the results of running the command can be inspected."
 	)
 
+	parser.add_argument(
+		"--allow-overwrite",
+		action="store_true",
+		help="If set, allows overwriting destination files when copying or transcoding."
+	)
+
 	return parser.parse_args()
 
 def loadConfig():
@@ -128,9 +134,13 @@ def transferFile(args, sourcePath:str, destPath:str) -> TransferResult:
 
 	existed = os.path.isfile(destPath)
 
-	if existed and utils.isDestNewer(sourcePath, destPath):
-		result.setTransferError(TRANSFER_ERROR_DEST_FILE_NEWER)
-		return result
+	if existed:
+		if args.allow_overwrite:
+			if args.commit:
+				os.unlink(destPath)
+		else:
+			result.setTransferError(TRANSFER_ERROR_DEST_FILE_EXISTED)
+			return result
 
 	try:
 		if args.commit:
@@ -148,9 +158,13 @@ def transcodeFile(args, configFile:config.Config, sourcePath:str, destPath:str) 
 
 	existed = os.path.isfile(destPath)
 
-	if existed and utils.isDestNewer(sourcePath, destPath):
-		result.setTransferError(TRANSFER_ERROR_DEST_FILE_NEWER)
-		return result
+	if existed:
+		if args.allow_overwrite:
+			if args.commit:
+				os.unlink(destPath)
+		else:
+			result.setTransferError(TRANSFER_ERROR_DEST_FILE_EXISTED)
+			return result
 
 	if args.commit:
 		try:
@@ -211,30 +225,35 @@ def addToResults(success:dict, failure:dict, result:TransferResult):
 def printSuccessfulResult(result:TransferResult):
 	sourcePath = result.getSourcePath()
 	destPath = result.getDestPath()
-	print(f"  {sourcePath}")
-	print(f"    ---> {destPath}")
+	print(f"    {sourcePath}")
+	print(f"      ---> {destPath}")
 
 def printUnsuccessfulResult(result:TransferResult):
 	sourcePath = result.getSourcePath()
-	print(f"  {sourcePath}")
+	print(f"    {sourcePath}")
 
 	reason = result.getTransferErrorReason()
 
 	if reason:
-		print(f"    {reason}")
+		print(f"      {reason}")
 
-def printResults(results:dict):
-	for category in results:
-		resultsInCategory = results[category]
-		print(f"{category}: {len(resultsInCategory)} files")
+def printResults(title:str, results:dict):
+	print(f"{title}:")
 
-		for result in resultsInCategory:
-			if result.getSuccessful():
-				printSuccessfulResult(result)
-			else:
-				printUnsuccessfulResult(result)
+	if results:
+		for category in results:
+			resultsInCategory = results[category]
+			print(f"  {category}: {len(resultsInCategory)} files")
 
-		print()
+			for result in resultsInCategory:
+				if result.getSuccessful():
+					printSuccessfulResult(result)
+				else:
+					printUnsuccessfulResult(result)
+
+			print()
+	else:
+		print("  0 files")
 
 def main():
 	args = parseArgs()
@@ -258,8 +277,8 @@ def main():
 		result = processFile(args, configFile, sourcePath, destPath)
 		addToResults(successfulTransfers, failedTransfers, result)
 
-	printResults(successfulTransfers)
-	printResults(failedTransfers)
+	printResults("Successful", successfulTransfers)
+	printResults("Failed", failedTransfers)
 
 if __name__ != "__main__":
 	raise RuntimeError("Expected file to be run as a script")
