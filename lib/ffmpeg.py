@@ -9,7 +9,7 @@ def runFFMPEG(configFile:config.Config, args:list):
 	return subprocess.run(args, shell=useShell)
 
 def to320kMP3(configFile:config.Config, inputFile:str, outputFile:str):
-	return runFFMPEG(config, [
+	return runFFMPEG(configFile, [
 		"-i", inputFile,
 		"-ab", "320k",
 		"-map_metadata", "0",

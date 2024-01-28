@@ -32,7 +32,7 @@ class Config:
 	def getDraftDirPath(self) -> str:
 		return self.__makePath(self.__draftDir)
 
-	def getFFMPEGOverridePath():
+	def getFFMPEGOverridePath(self):
 		return self.__ffmpeg
 
 	def __makePath(self, path:str):

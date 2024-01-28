@@ -8,6 +8,7 @@ TRANSFER_ERROR_NOT_STARTED = "Not yet transferred"
 TRANSFER_ERROR_TRANSCODING_FAILED = "Transcoding failed"
 TRANSFER_ERROR_INVALID_DESTINATION = "Invalid destination"
 TRANSFER_ERROR_VALIDATION_FAILED = "Validation failed"
+TRANSFER_ERROR_DEST_FILE_NEWER = "Destination file existed and was newer than source"
 
 class TransferResult():
 	def __init__(self, transferType:str, sourcePath:str, destPath:str):

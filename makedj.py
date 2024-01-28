@@ -119,14 +119,18 @@ def buildTargetFileList(root:str, paths:list, recursive:bool):
 
 def transferFile(args, sourcePath:str, destPath:str) -> TransferResult:
 	result = TransferResult(TRANSFER_TYPE_COPY, sourcePath, destPath)
+	result.setTransferError(TRANSFER_ERROR_NONE)
 
 	if os.path.isdir(destPath):
 		result.setTransferError(TRANSFER_ERROR_INVALID_DESTINATION)
 		result.setTransferErrorReason("Target path already existed as a directory")
 		return result
 
-	result.setReplacedTargetFile(os.path.isfile(destPath))
-	result.setTransferError(TRANSFER_ERROR_NONE)
+	existed = os.path.isfile(destPath)
+
+	if existed and utils.isDestNewer(sourcePath, destPath):
+		result.setTransferError(TRANSFER_ERROR_DEST_FILE_NEWER)
+		return result
 
 	try:
 		if args.commit:
@@ -135,6 +139,7 @@ def transferFile(args, sourcePath:str, destPath:str) -> TransferResult:
 		result.setTransferError(TRANSFER_ERROR_UNHANDLED)
 		result.setTransferErrorReason(str(ex))
 
+	result.setReplacedTargetFile(existed)
 	return result
 
 def transcodeFile(args, configFile:config.Config, sourcePath:str, destPath:str) -> TransferResult:
@@ -143,8 +148,13 @@ def transcodeFile(args, configFile:config.Config, sourcePath:str, destPath:str) 
 
 	existed = os.path.isfile(destPath)
 
+	if existed and utils.isDestNewer(sourcePath, destPath):
+		result.setTransferError(TRANSFER_ERROR_DEST_FILE_NEWER)
+		return result
+
 	if args.commit:
 		try:
+			os.makedirs(os.path.dirname(destPath), exist_ok=True)
 			transcodeResult = ffmpeg.to320kMP3(configFile, sourcePath, destPath)
 		except Exception as ex:
 			result.setTransferError(TRANSFER_ERROR_TRANSCODING_FAILED)
@@ -178,22 +188,25 @@ def processFile(args, configFile:config.Config, sourcePath:str, destPath:str) ->
 
 	return result
 
-def addToResults(results:dict, result:TransferResult):
+def addToResults(success:dict, failure:dict, result:TransferResult):
 	error = result.getTransferError()
 	category = "Unknown error"
 
 	if error == TRANSFER_ERROR_NONE:
+		target = success
+
 		if result.getTransferType() == TRANSFER_TYPE_TRANSCODE:
 			category = "Transcoded (overwritten)" if result.getReplacedTargetFile() else "Transcoded"
 		else:
 			category = "Overwritten" if result.getReplacedTargetFile() else "Copied"
 	else:
+		target = failure
 		category = error
 
-	if category not in results:
-		results[category] = []
+	if category not in target:
+		target[category] = []
 
-	results[category].append(result)
+	target[category].append(result)
 
 def printSuccessfulResult(result:TransferResult):
 	sourcePath = result.getSourcePath()
@@ -203,9 +216,12 @@ def printSuccessfulResult(result:TransferResult):
 
 def printUnsuccessfulResult(result:TransferResult):
 	sourcePath = result.getSourcePath()
-	reason = result.getTransferErrorReason()
 	print(f"  {sourcePath}")
-	print(f"    {reason if reason else 'Unspecified reason'}")
+
+	reason = result.getTransferErrorReason()
+
+	if reason:
+		print(f"    {reason}")
 
 def printResults(results:dict):
 	for category in results:
@@ -233,15 +249,17 @@ def main():
 	paths = prunePathsOutsideRoot(args.input_root, args.files)
 	filesInInputRoot = buildTargetFileList(args.input_root, paths, args.recursive)
 
-	results = {}
+	successfulTransfers = {}
+	failedTransfers = {}
 
 	for file in filesInInputRoot:
 		sourcePath = os.path.join(args.input_root, file)
 		destPath = os.path.join(args.output_root, file)
 		result = processFile(args, configFile, sourcePath, destPath)
-		addToResults(results, result)
+		addToResults(successfulTransfers, failedTransfers, result)
 
-	printResults(results)
+	printResults(successfulTransfers)
+	printResults(failedTransfers)
 
 if __name__ != "__main__":
 	raise RuntimeError("Expected file to be run as a script")
