@@ -2,13 +2,9 @@ import argparse
 import os
 import shutil
 from lib import config, validation, utils, ffmpeg
+from lib.transfer_result import *
 
 SCRIPT_DIR = os.path.realpath(os.path.dirname(__file__))
-
-CATEGORY_TRANSFER_FAILED = "Transfer failed"
-CATEGORY_TRANSCODE_FAILED = "Transcoding failed"
-CATEGORY_COPY_FILE = "Copied"
-CATEGORY_REPLACE_FILE = "Replaced"
 
 def parseArgs():
 	parser = argparse.ArgumentParser(
@@ -121,54 +117,108 @@ def buildTargetFileList(root:str, paths:list, recursive:bool):
 
 	return list(filePaths.keys())
 
-def transferFile(args, sourcePath:str, destPath:str):
+def transferFile(args, sourcePath:str, destPath:str) -> TransferResult:
+	result = TransferResult(TRANSFER_TYPE_COPY, sourcePath, destPath)
+
 	if os.path.isdir(destPath):
-		return (CATEGORY_TRANSFER_FAILED, None)
-	elif os.path.isfile(destPath):
-		if args.commit:
-			shutil.copy(sourcePath, destPath)
-		return (CATEGORY_REPLACE_FILE, destPath)
-	else:
-		if args.commit:
-			shutil.copy(sourcePath, destPath)
-		return (CATEGORY_COPY_FILE, destPath)
+		result.setTransferError(TRANSFER_ERROR_INVALID_DESTINATION)
+		result.setTransferErrorReason("Target path already existed as a directory")
+		return result
 
-def transcodeFile(args, configFile:config.Config, sourcePath:str, destPath:str):
+	result.setReplacedTargetFile(os.path.isfile(destPath))
+	result.setTransferError(TRANSFER_ERROR_NONE)
+
 	try:
-		existed = os.path.isfile(destPath)
-
 		if args.commit:
-			result = ffmpeg.to320kMP3(config, sourcePath, destPath)
+			shutil.copy(sourcePath, destPath)
+	except Exception as ex:
+		result.setTransferError(TRANSFER_ERROR_UNHANDLED)
+		result.setTransferErrorReason(str(ex))
 
-			if result.returncode != 0:
-				return (CATEGORY_TRANSCODE_FAILED, None)
+	return result
 
-		return (CATEGORY_REPLACE_FILE if existed else CATEGORY_COPY_FILE, destPath)
-	except Exception:
-		return (CATEGORY_TRANSCODE_FAILED, None)
+def transcodeFile(args, configFile:config.Config, sourcePath:str, destPath:str) -> TransferResult:
+	result = TransferResult(TRANSFER_TYPE_TRANSCODE, sourcePath, destPath)
+	result.setTransferError(TRANSFER_ERROR_NONE)
 
-def processFile(args, configFile:config.Config, sourcePath:str, destPath:str):
+	existed = os.path.isfile(destPath)
+
+	if args.commit:
+		try:
+			transcodeResult = ffmpeg.to320kMP3(configFile, sourcePath, destPath)
+		except Exception as ex:
+			result.setTransferError(TRANSFER_ERROR_TRANSCODING_FAILED)
+			result.setTransferErrorReason(str(ex))
+			return result
+
+		if transcodeResult.returncode != 0:
+			result.setTransferError(TRANSFER_ERROR_TRANSCODING_FAILED)
+			result.setTransferErrorReason(f"Transcode operation returned error code {transcodeResult.returncode}")
+			return result
+
+	result.setReplacedTargetFile(existed)
+	return result
+
+def processFile(args, configFile:config.Config, sourcePath:str, destPath:str) -> TransferResult:
+	result = TransferResult(TRANSFER_TYPE_UNKNOWN, sourcePath, destPath)
+
 	try:
 		validationErrors = validation.validateFile(sourcePath)
 
 		if not validationErrors:
-			return transferFile(args, sourcePath, destPath)
+			result = transferFile(args, sourcePath, destPath)
+		elif validationErrors == [validation.NOT_AN_MP3]:
+			result = transcodeFile(args, configFile, sourcePath, os.path.splitext(destPath)[0] + ".mp3")
+		else:
+			result.setTransferError(TRANSFER_ERROR_VALIDATION_FAILED)
+			result.setTransferErrorReason("; ".join(validationErrors))
+	except Exception as ex:
+		result.setTransferError(TRANSFER_ERROR_UNHANDLED)
+		result.setTransferErrorReason(f"An exception was encountered: {ex}")
 
-		if validationErrors == [validation.NOT_AN_MP3]:
-			return transcodeFile(args, config, sourcePath, os.path.splitext(destPath)[0] + ".mp3")
-	except Exception:
-		pass
+	return result
 
-	return (CATEGORY_TRANSFER_FAILED, None)
+def addToResults(results:dict, result:TransferResult):
+	error = result.getTransferError()
+	category = "Unknown error"
 
-def addToResults(results:dict, category:str, sourcePath:str, resultPath:str):
+	if error == TRANSFER_ERROR_NONE:
+		if result.getTransferType() == TRANSFER_TYPE_TRANSCODE:
+			category = "Transcoded (overwritten)" if result.getReplacedTargetFile() else "Transcoded"
+		else:
+			category = "Overwritten" if result.getReplacedTargetFile() else "Copied"
+	else:
+		category = error
+
 	if category not in results:
 		results[category] = []
 
-	if category == CATEGORY_COPY_FILE or category == CATEGORY_REPLACE_FILE:
-		results[category].append((sourcePath, resultPath))
-	else:
-		results[category].append(sourcePath)
+	results[category].append(result)
+
+def printSuccessfulResult(result:TransferResult):
+	sourcePath = result.getSourcePath()
+	destPath = result.getDestPath()
+	print(f"  {sourcePath}")
+	print(f"    ---> {destPath}")
+
+def printUnsuccessfulResult(result:TransferResult):
+	sourcePath = result.getSourcePath()
+	reason = result.getTransferErrorReason()
+	print(f"  {sourcePath}")
+	print(f"    {reason if reason else 'Unspecified reason'}")
+
+def printResults(results:dict):
+	for category in results:
+		resultsInCategory = results[category]
+		print(f"{category}: {len(resultsInCategory)} files")
+
+		for result in resultsInCategory:
+			if result.getSuccessful():
+				printSuccessfulResult(result)
+			else:
+				printUnsuccessfulResult(result)
+
+		print()
 
 def main():
 	args = parseArgs()
@@ -181,28 +231,17 @@ def main():
 		args.output_root = configFile.getDJDirPath()
 
 	paths = prunePathsOutsideRoot(args.input_root, args.files)
-	filesInInputRoot = buildTargetFileList(args.input_root, args.files, args.recursive)
+	filesInInputRoot = buildTargetFileList(args.input_root, paths, args.recursive)
 
 	results = {}
 
 	for file in filesInInputRoot:
 		sourcePath = os.path.join(args.input_root, file)
 		destPath = os.path.join(args.output_root, file)
-		category, resultPath = processFile(args, configFile, sourcePath, destPath)
-		addToResults(results, category, sourcePath, resultPath)
+		result = processFile(args, configFile, sourcePath, destPath)
+		addToResults(results, result)
 
-	for category in results:
-		filesInCategory = results[category]
-		print(f"{category}: {len(filesInCategory)} files")
-
-		for file in filesInCategory:
-			if type(file) is tuple:
-				link = " --> " if os.path.splitext(file[0])[1] == os.path.splitext(file[1])[1] else " ==> "
-				print(f"  {link.join(file)}")
-			else:
-				print(f"  {file}")
-
-		print()
+	printResults(results)
 
 if __name__ != "__main__":
 	raise RuntimeError("Expected file to be run as a script")
