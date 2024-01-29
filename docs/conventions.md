@@ -12,27 +12,21 @@ In DnB tracks, a phrase is typically 16 bars (16 * 4 = 64 beats). This equates t
 
 # Memory Cues
 
-CDJ memory cues should be used as reference points in a track, which indicate its general structure. Most tracks should have memory cues:
+CDJ memory cues should be used to indicate potential "mix crossover points" - where the vibe of what's being played in a mix can switch from one track to the next. Crossover points will usually occur on boundaries of different sections of a track, eg. when the first main section transitions into a breakdown.
 
-* On the first beat of the intro
-* At the first drop
-* On the first beat of the breakdown
-* At the second drop
-* At the first beat of the outro
-* At the last beat of the outro
-
-A countdown of the number of bars to the next memory cue can be useful to assess how much of the track is left until it changes structure.
-
-Memory cues will often be used as mix-out points.
+Memory cues earlier in a track will usually be used as "mix in" points for that track. Memory cues later in the track will usually be used as "mix out" points. A countdown of the number of bars to the next memory cue can be shown alongside the waveform, to assess how much of the track is left until a crossover should occur.
 
 # Hot Cues
 
-CDJ hot cues should be placed at mix-in points, where the beginning of a transition into the track would begin. Given older CDJ kit may only have three hot cue buttons, the first hot cues should be used to mark the most helpful mix-in points. These are usually:
+The primary use of CDJ hot cues should be to indicate positions where a mix of a new track should begin. They should establish sections of "runway", usually one or two phrases, leading up to a memory cue.
 
-1. One phrase before the first drop
-2. One phrase before the second drop
+Consequently, hot cues should *not* usually be placed on a boundary between two distinct sections of a track, since the boundary should be the crossover point, and there would be no space to mix the track in up to that boundary. An exception to this would be if the runway to a memory cue happens to place a hot cue on a previous boundary; the hot cue should not be used to mix in to the boundary it is on top of, but rather the next one.
 
-Other hot cues may be assigned to other points that could be useful, eg. two phrases before a drop.
+## Hot Cue Banks
+
+Older CDJ controllers may only have three hot cue buttons available; therefore, the first three hot cues should always be reserved for the three most appropriate sections of runway in a track.
+
+Newer CDJ controllers may have two separate banks of four hot cues, making a total of eight. Since the first bank will be active by default, it should be used to store the most convenient set of hot cues, and the second bank may be used to store hot cues which do not need to be as readily available. For example, loops could be stored in the second bank, since if the hardware does not support the second bank of hot cues then the loops may still be constructed live using the dedicated loop buttons.
 
 ## Gating
 
@@ -42,10 +36,9 @@ The setting "During pause, GATE playback is applied to hot cues" should be disab
 
 Hot cues can be assigned colours, which should be categorised as follows:
 
-* **Green:** Breakdown or build-up with percussion and without vocals
-* **Blue**: Breakdown or build-up without percussion and without vocals
-* **Yellow**: Breakdown or build-up with percussion and with vocals
-* **Pink**: Breakdown or build-up without percussion and with vocals
+* **Green:** General-purpose hot cue.
+* **Yellow:** Hot cue with a one-phrase runway before vocals begin. This does not apply if the vocals are already present in the runway phrase.
+* **Orange:** General-purpose inactive loop.
 
 Think of green representing percussion, blue representing no percussion, and red representing vocals. Adding red to green in RGB space gives yellow, and adding it to blue gives pink.
 
