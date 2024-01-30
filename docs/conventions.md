@@ -24,7 +24,11 @@ Consequently, hot cues should *not* usually be placed on a boundary between two 
 
 ## Hot Cue Banks
 
-Older CDJ controllers may only have three hot cue buttons available; therefore, the first three hot cues should always be reserved for the three most appropriate sections of runway in a track.
+Older CDJ controllers may only have three hot cue buttons available; therefore, the first three hot cues should always be reserved for the three most appropriate sections of runway in a track. This is usually:
+
+* **A:** One phrase before the first drop.
+* **B:** Two phrases before the first drop - particularly if there is a breakdown before the first drop, in which case it provides runway to this.
+* **C:** One phrase before the middle breakdown.
 
 Newer CDJ controllers may have two separate banks of four hot cues, making a total of eight. Since the first bank will be active by default, it should be used to store the most convenient set of hot cues, and the second bank may be used to store hot cues which do not need to be as readily available. For example, loops could be stored in the second bank, since if the hardware does not support the second bank of hot cues then the loops may still be constructed live using the dedicated loop buttons.
 
@@ -37,8 +41,9 @@ The setting "During pause, GATE playback is applied to hot cues" should be disab
 Hot cues can be assigned colours, which should be categorised as follows:
 
 * **Green:** General-purpose hot cue.
-* **Yellow:** Hot cue with a one-phrase runway before vocals begin. This does not apply if the vocals are already present in the runway phrase.
-* **Orange:** General-purpose inactive loop.
+* **Yellow:** Hot cue where vocals begin after the runway. This does not apply if the vocals are already present in the runway.
+* **Orange:** Inactive loop aligned to the beginning of a phrase.
+* **Turquoise:** Inactive loop not aligned to the beginning of a phrase.
 
 Think of green representing percussion, blue representing no percussion, and red representing vocals. Adding red to green in RGB space gives yellow, and adding it to blue gives pink.
 
