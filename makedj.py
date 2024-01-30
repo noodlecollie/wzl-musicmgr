@@ -144,6 +144,7 @@ def transferFile(args, sourcePath:str, destPath:str) -> TransferResult:
 
 	try:
 		if args.commit:
+			os.makedirs(os.path.dirname(destPath), exist_ok=True)
 			shutil.copy(sourcePath, destPath)
 	except Exception as ex:
 		result.setTransferError(TRANSFER_ERROR_UNHANDLED)
