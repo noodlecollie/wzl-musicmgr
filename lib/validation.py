@@ -7,17 +7,19 @@ except ModuleNotFoundError:
 	print("Mutagen was not found - run `python3 -m pip install mutagen`")
 	raise
 
-WELL_SUPPORTED_FORMATS = [
-	".mp3",
+MEDIA_FORMAT_LOSSLESS = [
 	".flac",
 	".wav",
-	".aiff"
+	".alac"
 ]
 
-ALL_MEDIA_FORMATS = WELL_SUPPORTED_FORMATS + [
+MEDIA_FORMAT_ALLOWED = MEDIA_FORMAT_LOSSLESS + [".mp3"]
+
+ALL_MEDIA_FORMATS = MEDIA_FORMAT_ALLOWED + [
 	".ogg",
 	".wma",
-	".m4a"
+	".m4a",
+	".aiff"
 ]
 
 DOES_NOT_EXIST = "File does not exist"
@@ -43,7 +45,7 @@ def __fileIsMissingBasicTags(filePath:str) -> list:
 def __performChecksOnFileContents(filePath:str, extension:str) -> list:
 	validationErrors = []
 
-	if extension in WELL_SUPPORTED_FORMATS:
+	if extension in MEDIA_FORMAT_ALLOWED:
 		if File(filePath).info.length > 10 * 60:
 			validationErrors.append(OVER_TEN_MINUTES_LONG)
 
@@ -66,7 +68,7 @@ def validateFile(filePath:str, logExceptions=True) -> list:
 
 		extension = os.path.splitext(filePath)[1].lower()
 
-		if extension not in WELL_SUPPORTED_FORMATS:
+		if extension not in MEDIA_FORMAT_ALLOWED:
 			validationErrors.append(UNSUPPORTED_FORMAT)
 
 		if extension != ".mp3":
