@@ -51,8 +51,8 @@ Think of green representing percussion, blue representing no percussion, and red
 
 Star ratings are used to denote energy levels for tracks. The levels are based loosely around the following examples:
 
-* **1 star:** London Grammar - If You Wait (Calibre Alternate Remix)
-* **2 stars:** Nu:Tone - The Moment
-* **3 stars:** Logistics - Cascades Of Colour
-* **4 stars:** High Contrast - Racing Green
-* **5 stars:** Netsky - Love Has Gone
+* **1 Star (Relax):** London Grammar - If You Wait (Calibre Alternate Remix)
+* **2 Stars (Vibe):** DRS, Tyler Daley & Calibre - I Remember
+* **3 Stars (Groove):** Logistics - Cascades Of Colour
+* **4 Stars (Dance):** High Contrast - Racing Green
+* **5 Stars (Rave):** Netsky - Love Has Gone
