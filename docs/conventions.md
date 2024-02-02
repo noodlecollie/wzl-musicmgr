@@ -34,7 +34,7 @@ Newer CDJ controllers may have two separate banks of four hot cues, making a tot
 
 ## Gating
 
-The setting "During pause, GATE playback is applied to hot cues" should be disabled, so that hot cues continue playing once the button is released. This is so that a hot cue can be set playing using only one hand. If the setting were turned on, and the play button needed to be pressed to keep a hot cue playing on a CDJ, this may require two hands to accomplish.
+The setting "During pause, GATE playback is applied to hot cues" does not apply to CDJs, only to Rekordbox. The setting should be left off, to avoid confusion.
 
 ## Colours
 
@@ -46,6 +46,10 @@ Hot cues can be assigned colours, which should be categorised as follows:
 * **Turquoise:** Inactive loop not aligned to the beginning of a phrase.
 
 Think of green representing percussion, blue representing no percussion, and red representing vocals. Adding red to green in RGB space gives yellow, and adding it to blue gives pink.
+
+## TODO
+
+* Re-evaluate the hot cue approach - it didn't seem very easy to actually use on the CDJs. It may be better to simply do the memory cueing in Rekordbox, and the hot cueing on the CDJs themselves, so that the hot cues are set according to what is actually convenient when mixing.
 
 # Energy Levels
 
