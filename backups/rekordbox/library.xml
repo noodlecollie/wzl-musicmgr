@@ -1,0 +1,1496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DJ_PLAYLISTS Version="1.0.0">
+  <PRODUCT Name="rekordbox" Version="6.8.2" Company="AlphaTheta"/>
+  <COLLECTION Entries="99">
+    <TRACK TrackID="41382051" Name="NOISE" Artist="" Composer="" Album=""
+           Grouping="" Genre="" Kind="WAV File" Size="1382226" TotalTime="5"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-01-23"
+           BitRate="2116" SampleRate="44100" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/OSC_SAMPLER/PRESET%20ONESHOT/NOISE.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="264166411" Name="SINEWAVE" Artist="" Composer="" Album=""
+           Grouping="" Genre="" Kind="WAV File" Size="1515258" TotalTime="5"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-01-23"
+           BitRate="2116" SampleRate="44100" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/OSC_SAMPLER/PRESET%20ONESHOT/SINEWAVE.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="135126155" Name="SIREN" Artist="" Composer="" Album=""
+           Grouping="" Genre="" Kind="WAV File" Size="1941204" TotalTime="7"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-01-23"
+           BitRate="2116" SampleRate="44100" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/OSC_SAMPLER/PRESET%20ONESHOT/SIREN.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="57690100" Name="HORN" Artist="" Composer="" Album=""
+           Grouping="" Genre="" Kind="WAV File" Size="2010816" TotalTime="7"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-01-23"
+           BitRate="2116" SampleRate="44100" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/OSC_SAMPLER/PRESET%20ONESHOT/HORN.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="117335435" Name="Demo Track 1" Artist="Loopmasters"
+           Composer="" Album="" Grouping="" Genre="" Kind="MP3 File" Size="6899624"
+           TotalTime="172" DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="128.00"
+           DateAdded="2024-01-23" BitRate="320" SampleRate="44100" Comments="Tracks by www.loopmasters.com"
+           PlayCount="0" Rating="0" Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Demo%20Tracks/Demo%20Track%201.mp3"
+           Remixer="" Tonality="" Label="Loopmasters" Mix="">
+      <TEMPO Inizio="0.025" Bpm="128.00" Metro="4/4" Battito="1"/>
+    </TRACK>
+    <TRACK TrackID="213937560" Name="Demo Track 2" Artist="Loopmasters"
+           Composer="" Album="" Grouping="" Genre="" Kind="MP3 File" Size="5124342"
+           TotalTime="128" DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="120.00"
+           DateAdded="2024-01-23" BitRate="320" SampleRate="44100" Comments="Tracks by www.loopmasters.com"
+           PlayCount="0" Rating="0" Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Demo%20Tracks/Demo%20Track%202.mp3"
+           Remixer="" Tonality="" Label="Loopmasters" Mix="">
+      <TEMPO Inizio="0.025" Bpm="120.00" Metro="4/4" Battito="1"/>
+      <TEMPO Inizio="48.026" Bpm="120.00" Metro="4/4" Battito="1"/>
+      <TEMPO Inizio="48.525" Bpm="120.00" Metro="4/4" Battito="2"/>
+      <TEMPO Inizio="49.026" Bpm="120.00" Metro="4/4" Battito="3"/>
+      <TEMPO Inizio="49.525" Bpm="120.00" Metro="4/4" Battito="4"/>
+      <TEMPO Inizio="50.026" Bpm="120.00" Metro="4/4" Battito="1"/>
+      <TEMPO Inizio="50.525" Bpm="120.00" Metro="4/4" Battito="2"/>
+      <TEMPO Inizio="51.026" Bpm="120.00" Metro="4/4" Battito="3"/>
+      <TEMPO Inizio="51.525" Bpm="120.00" Metro="4/4" Battito="4"/>
+      <TEMPO Inizio="52.026" Bpm="120.00" Metro="4/4" Battito="1"/>
+    </TRACK>
+    <TRACK TrackID="61682686" Name="SNARE9" Artist="" Composer="" Album=""
+           Grouping="" Genre="" Kind="WAV File" Size="186906" TotalTime="0"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-01-23"
+           BitRate="2116" SampleRate="44100" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20101.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="35833822" Name="SNARE8" Artist="" Composer="" Album=""
+           Grouping="" Genre="" Kind="WAV File" Size="135948" TotalTime="0"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-01-23"
+           BitRate="2116" SampleRate="44100" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20102.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="88169846" Name="CLAP" Artist="" Composer="" Album=""
+           Grouping="" Genre="" Kind="WAV File" Size="203884" TotalTime="0"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-01-23"
+           BitRate="2116" SampleRate="44100" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20103.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="38800095" Name="CYMBAL" Artist="" Composer="" Album=""
+           Grouping="" Genre="" Kind="WAV File" Size="543576" TotalTime="2"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-01-23"
+           BitRate="2116" SampleRate="44100" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20104.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="225674725" Name="CLASH CYMBAL" Artist="" Composer=""
+           Album="" Grouping="" Genre="" Kind="WAV File" Size="1155024"
+           TotalTime="4" DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00"
+           DateAdded="2024-01-23" BitRate="2116" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="0" Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20201.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="46173989" Name="SNARE" Artist="Loopmasters" Composer=""
+           Album="" Grouping="" Genre="" Kind="WAV File" Size="486444" TotalTime="1"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-01-23"
+           BitRate="2116" SampleRate="44100" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20202.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="182916364" Name="BOOM DOWN LIFTER1" Artist="Loopmasters"
+           Composer="" Album="" Grouping="" Genre="" Kind="WAV File" Size="1297038"
+           TotalTime="4" DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00"
+           DateAdded="2024-01-23" BitRate="2116" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="0" Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20203.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="217411020" Name="BOOM DOWN LIFTER2" Artist="Loopmasters"
+           Composer="" Album="" Grouping="" Genre="" Kind="WAV File" Size="1639462"
+           TotalTime="9" DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00"
+           DateAdded="2024-01-23" BitRate="1411" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="0" Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20204.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="142035570" Name="NOISE DOWN LIFTER1" Artist="Loopmasters"
+           Composer="" Album="" Grouping="" Genre="" Kind="WAV File" Size="1297040"
+           TotalTime="4" DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00"
+           DateAdded="2024-01-23" BitRate="2116" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="0" Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20205.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="258201318" Name="NOISE DOWN LIFTER2" Artist="Loopmasters"
+           Composer="" Album="" Grouping="" Genre="" Kind="WAV File" Size="1378094"
+           TotalTime="5" DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00"
+           DateAdded="2024-01-23" BitRate="2116" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="0" Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20206.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="193250791" Name="IMPACT KICK" Artist="Loopmasters" Composer=""
+           Album="" Grouping="" Genre="" Kind="WAV File" Size="1459146"
+           TotalTime="5" DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00"
+           DateAdded="2024-01-23" BitRate="2116" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="0" Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20207.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="168096246" Name="IMPACT SNARE" Artist="Loopmasters"
+           Composer="" Album="" Grouping="" Genre="" Kind="WAV File" Size="1489766"
+           TotalTime="5" DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00"
+           DateAdded="2024-01-23" BitRate="2116" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="0" Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20208.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="213196673" Name="SHORT BOOM" Artist="Loopmasters" Composer=""
+           Album="" Grouping="" Genre="" Kind="WAV File" Size="652554" TotalTime="2"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-01-23"
+           BitRate="2116" SampleRate="44100" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20209.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="40479285" Name="NEEDLE SCRATCH NOISE" Artist="" Composer=""
+           Album="" Grouping="" Genre="" Kind="WAV File" Size="543590" TotalTime="2"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-01-23"
+           BitRate="2116" SampleRate="44100" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20301.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="66490971" Name="HORN" Artist="" Composer="" Album=""
+           Grouping="" Genre="" Kind="WAV File" Size="1621228" TotalTime="6"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-01-23"
+           BitRate="2116" SampleRate="44100" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20302.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="90666901" Name="REWIND" Artist="" Composer="" Album=""
+           Grouping="" Genre="" Kind="WAV File" Size="1494288" TotalTime="5"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-01-23"
+           BitRate="2116" SampleRate="44100" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20303.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="157956615" Name="SHORT BOOM" Artist="Loopmasters" Composer=""
+           Album="" Grouping="" Genre="" Kind="WAV File" Size="727752" TotalTime="2"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-01-23"
+           BitRate="2116" SampleRate="44100" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20304.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="225756498" Name="LET&apos;S GO" Artist="Loopmasters"
+           Composer="" Album="" Grouping="" Genre="" Kind="WAV File" Size="1002802"
+           TotalTime="3" DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00"
+           DateAdded="2024-01-23" BitRate="2116" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="0" Location="file://localhost/C:/Users/Admin/Music/PioneerDJ/Sampler/MERGE%20FX/MergeFX%20Sample%20Sound%20305.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="73812583" Name="Inside My Soul (Original)" Artist="Logistics "
+           Composer="" Album="Spacejam EP" Grouping="" Genre="Drum &amp; Bass"
+           Kind="MP3 File" Size="15454706" TotalTime="377" DiscNumber="0"
+           TrackNumber="1" Year="0" AverageBpm="174.00" DateAdded="2024-01-25"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="3" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/Logistics/Spacejam%20EP/logistics-inside-my-soul-original.mp3"
+           Remixer="" Tonality="5A" Label="" Mix="">
+      <TEMPO Inizio="0.031" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.031" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.237" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="154.513" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="198.651" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="286.927" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="375.202" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.100" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="194760878" Name="Kaleidoscope (Original)" Artist="Logistics "
+           Composer="" Album="Spacejam EP" Grouping="" Genre="Drum &amp; Bass"
+           Kind="MP3 File" Size="14780745" TotalTime="360" DiscNumber="0"
+           TrackNumber="1" Year="0" AverageBpm="174.00" DateAdded="2024-01-25"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="5" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/Logistics/Spacejam%20EP/logistics-kaleidoscope-original.mp3"
+           Remixer="" Tonality="9A" Label="" Mix="">
+      <TEMPO Inizio="0.026" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.026" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.164" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.233" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.785" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="198.647" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="353.130" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="308.992" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.095" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="187985905" Name="Spacejam (Original)" Artist="Logistics "
+           Composer="" Album="Spacejam EP" Grouping="" Genre="Drum &amp; Bass"
+           Kind="MP3 File" Size="14953149" TotalTime="365" DiscNumber="0"
+           TrackNumber="1" Year="0" AverageBpm="170.00" DateAdded="2024-01-25"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="5" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/Logistics/Spacejam%20EP/logistics-spacejam-original.mp3"
+           Remixer="" Tonality="9A" Label="" Mix="">
+      <TEMPO Inizio="0.026" Bpm="170.00" Metro="4/4" Battito="1"/>
+      <TEMPO Inizio="143.674" Bpm="170.00" Metro="4/4" Battito="4"/>
+      <POSITION_MARK Name="" Type="0" Start="0.026" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="135.556" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="203.321" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="225.909" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="316.262" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="361.439" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="45.203" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="90.379" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="238832877" Name="Together (VIP)" Artist="Logistics "
+           Composer="" Album="Spacejam EP" Grouping="" Genre="Drum &amp; Bass"
+           Kind="MP3 File" Size="12804924" TotalTime="362" DiscNumber="0"
+           TrackNumber="1" Year="0" AverageBpm="174.00" DateAdded="2024-01-25"
+           BitRate="0" SampleRate="44100" Comments="" PlayCount="3" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/Logistics/Spacejam%20EP/logistics-together-vip.mp3"
+           Remixer="" Tonality="1A" Label="" Mix="">
+      <TEMPO Inizio="0.080" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.080" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.356" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="198.700" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.769" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="353.183" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="309.045" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.149" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.287" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="46023419" Name="Constant" Artist="SOLAH" Composer=""
+           Album="Constant / Elevate" Grouping="" Genre="Drum &amp; Bass"
+           Kind="MP3 File" Size="25091604" TotalTime="319" DiscNumber="0"
+           TrackNumber="1" Year="2022" AverageBpm="172.00" DateAdded="2024-01-28"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="1" Rating="102"
+           Location="file://localhost/D:/Home/Music/DJ/SOLAH/Constant%20-%20Elevate/NHS467DD2-001-SOLAH-Constant.mp3"
+           Remixer="" Tonality="4A" Label="" Mix="">
+      <TEMPO Inizio="0.126" Bpm="172.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.126" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="89.429" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="223.382" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="178.731" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="312.684" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="290.359" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.778" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="179322546" Name="Elevate" Artist="SOLAH" Composer=""
+           Album="Constant / Elevate" Grouping="" Genre="Drum &amp; Bass"
+           Kind="MP3 File" Size="23196158" TotalTime="271" DiscNumber="0"
+           TrackNumber="2" Year="2022" AverageBpm="174.00" DateAdded="2024-01-28"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="3" Rating="102"
+           Location="file://localhost/D:/Home/Music/DJ/SOLAH/Constant%20-%20Elevate/NHS467DD2-002-SOLAH-Elevate.mp3"
+           Remixer="" Tonality="11A" Label="" Mix="">
+      <TEMPO Inizio="0.123" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.123" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.260" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="132.536" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="154.604" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.880" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="264.949" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.191" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="197220636" Name="Everything Is Possible" Artist="SOLAH"
+           Composer="" Album="Constant / Elevate" Grouping="" Genre="Drum &amp; Bass"
+           Kind="MP3 File" Size="24943242" TotalTime="315" DiscNumber="0"
+           TrackNumber="3" Year="2022" AverageBpm="175.00" DateAdded="2024-01-28"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="1" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/SOLAH/Constant%20-%20Elevate/NHS467DD2-003-SOLAH-Everything_Is_Possible.mp3"
+           Remixer="" Tonality="2A" Label="" Mix="">
+      <TEMPO Inizio="0.127" Bpm="175.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.127" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="65.955" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="153.726" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="197.611" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="285.382" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="307.325" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.012" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.069" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="245376065" Name="Fly" Artist="SOLAH" Composer="" Album="Constant / Elevate"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="23278701"
+           TotalTime="273" DiscNumber="0" TrackNumber="4" Year="2022" AverageBpm="174.00"
+           DateAdded="2024-01-28" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="2" Rating="153" Location="file://localhost/D:/Home/Music/DJ/SOLAH/Constant%20-%20Elevate/NHS467DD2-004-SOLAH-Fly.mp3"
+           Remixer="" Tonality="9A" Label="" Mix="">
+      <TEMPO Inizio="0.127" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.127" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.265" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="132.541" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.679" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="264.956" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.887" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="87312942" Name="Circles (Pola &amp; Bryson Bootleg)"
+           Artist="Adam F" Composer="" Album="Circles" Grouping="" Genre="Drum &amp; Bass"
+           Kind="MP3 File" Size="10628549" TotalTime="265" DiscNumber="0"
+           TrackNumber="0" Year="0" AverageBpm="175.00" DateAdded="2024-01-30"
+           BitRate="320" SampleRate="48000" Comments="" PlayCount="1" Rating="255"
+           Location="file://localhost/D:/Home/Music/DJ/Adam%20F%20-%20Circles%20(Pola%20and%20Bryson%20Remix)/Adam%20F%20-%20Circles%20(Pola%20%26%20Bryson%20VIP).mp3"
+           Remixer="" Tonality="8A" Label="" Mix="">
+      <TEMPO Inizio="0.035" Bpm="175.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.035" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="43.921" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="131.693" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="175.579" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="263.351" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="35437470" Name="Return Of Forever (Camo &amp; Krooked &amp; Mefjus Remix)"
+           Artist="High Contrast" Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="11703584"
+           TotalTime="273" DiscNumber="0" TrackNumber="1" Year="2022" AverageBpm="172.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="2" Rating="204" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2001%20Return%20Of%20Forever%20(Camo%20%26%20Krooked%20%26%20Mefjus%20Remix).mp3"
+           Remixer="" Tonality="11A" Label="" Mix="">
+      <TEMPO Inizio="0.025" Bpm="172.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.025" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="89.327" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="156.304" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="223.281" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.676" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="200.955" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="133.978" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="267.932" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="245923634" Name="True Colours (Flava D Remix)" Artist="High Contrast"
+           Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="11827906"
+           TotalTime="276" DiscNumber="0" TrackNumber="2" Year="2022" AverageBpm="173.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="3" Rating="204" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2002%20True%20Colours%20(Flava%20D%20Remix).mp3"
+           Remixer="" Tonality="5A" Label="" Mix="">
+      <TEMPO Inizio="0.025" Bpm="173.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.025" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.615" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.418" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="133.204" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="155.401" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="244.187" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="266.383" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="50307115" Name="Global Love (DJ Marky Remix)" Artist="High Contrast"
+           Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="10755841"
+           TotalTime="249" DiscNumber="0" TrackNumber="3" Year="2022" AverageBpm="175.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="204" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2003%20Global%20Love%20(DJ%20Marky%20Remix).mp3"
+           Remixer="" Tonality="8A" Label="" Mix="">
+      <TEMPO Inizio="0.025" Bpm="175.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.025" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="21.968" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="43.911" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="109.740" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="153.625" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="131.682" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="241.397" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="136350645" Name="Exposé (Artificial Intelligence Remix)"
+           Artist="High Contrast" Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="11575092"
+           TotalTime="270" DiscNumber="0" TrackNumber="4" Year="2022" AverageBpm="174.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="3" Rating="102" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2004%20Expos%c3%a9%20(Artificial%20Intelligence%20Remix).mp3"
+           Remixer="" Tonality="8A" Label="" Mix="">
+      <TEMPO Inizio="0.026" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.164" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="132.440" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.578" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="264.854" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.095" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.026" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="154831197" Name="Passion (BOP Remix)" Artist="High Contrast"
+           Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="12835179"
+           TotalTime="301" DiscNumber="0" TrackNumber="5" Year="2022" AverageBpm="173.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="1" Rating="153" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2005%20Passion%20(BOP%20Remix).mp3"
+           Remixer="" Tonality="3A" Label="" Mix="">
+      <TEMPO Inizio="0.033" Bpm="173.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.033" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.426" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="199.802" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="155.409" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="288.588" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.229" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="164124972" Name="Make It Tonight (High Contrast VIP Remix)"
+           Artist="High Contrast" Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="13428703"
+           TotalTime="316" DiscNumber="0" TrackNumber="6" Year="2022" AverageBpm="173.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="204" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2006%20Make%20It%20Tonight%20(High%20Contrast%20VIP%20Remix).mp3"
+           Remixer="" Tonality="8A" Label="" Mix="">
+      <TEMPO Inizio="0.040" Bpm="173.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.040" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.629" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="155.415" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="199.808" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.236" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="288.594" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="310.790" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="24912024" Name="Music Is Everything (Pola &amp; Bryson Remix)"
+           Artist="High Contrast" Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="12355593"
+           TotalTime="289" DiscNumber="0" TrackNumber="7" Year="2022" AverageBpm="174.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="1" Rating="153" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2007%20Music%20Is%20Everything%20(Pola%20%26%20Bryson%20Remix).mp3"
+           Remixer="" Tonality="7A" Label="" Mix="">
+      <TEMPO Inizio="0.025" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="77.266" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.025" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="165.542" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="209.680" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="275.886" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="76109021" Name="Remember When (Winslow Remix)" Artist="High Contrast"
+           Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="13415107"
+           TotalTime="316" DiscNumber="0" TrackNumber="8" Year="2022" AverageBpm="174.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="1" Rating="204" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2008%20Remember%20When%20(Winslow%20Remix).mp3"
+           Remixer="" Tonality="9B" Label="" Mix="">
+      <TEMPO Inizio="0.028" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.028" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.303" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.717" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.579" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="308.992" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.234" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.165" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="103110201" Name="Savoir Faire (Logistics Remix)" Artist="High Contrast"
+           Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="9987843"
+           TotalTime="230" DiscNumber="0" TrackNumber="9" Year="2022" AverageBpm="174.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="4" Rating="153" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2009%20Savoir%20Faire%20(Logistics%20Remix).mp3"
+           Remixer="" Tonality="8A" Label="" Mix="">
+      <TEMPO Inizio="0.024" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.024" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.162" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="110.369" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="132.438" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.714" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="66231382" Name="Mermaid Scar (Samurai Breaks &amp; Neve Remix)"
+           Artist="High Contrast" Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="16439056"
+           TotalTime="391" DiscNumber="0" TrackNumber="10" Year="2022" AverageBpm="173.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="204" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2010%20Mermaid%20Scar%20(Samurai%20Breaks%20%26%20Neve%20Remix).mp3"
+           Remixer="" Tonality="3A" Label="" Mix="">
+      <TEMPO Inizio="0.028" Bpm="173.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.028" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.421" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.814" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="221.993" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="266.387" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="355.173" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="377.369" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="191647666" Name="Amen Sister (Digital Remix)" Artist="High Contrast"
+           Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="12294975"
+           TotalTime="288" DiscNumber="0" TrackNumber="11" Year="2022" AverageBpm="172.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="1" Rating="204" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2011%20Amen%20Sister%20(Digital%20Remix).mp3"
+           Remixer="" Tonality="1A" Label="" Mix="">
+      <TEMPO Inizio="0.097" Bpm="172.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.097" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="72.654" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="161.955" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="184.281" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="273.582" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="67.073" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="234591329" Name="Return Of Forever" Artist="High Contrast"
+           Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="20759684"
+           TotalTime="499" DiscNumber="0" TrackNumber="12" Year="2022" AverageBpm="173.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="2" Rating="255" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2012%20Return%20Of%20Forever.mp3"
+           Remixer="" Tonality="11A" Label="" Mix="">
+      <TEMPO Inizio="0.031" Bpm="173.00" Metro="4/4" Battito="2"/>
+      <POSITION_MARK Name="" Type="0" Start="1.071" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="156.443" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="112.051" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="400.599" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="356.207" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="489.383" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="45.463" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="89.855" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="101202870" Name="True Colours" Artist="High Contrast"
+           Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="15552952"
+           TotalTime="369" DiscNumber="0" TrackNumber="13" Year="2022" AverageBpm="174.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="1" Rating="102" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2013%20True%20Colours.mp3"
+           Remixer="" Tonality="6A" Label="" Mix="">
+      <TEMPO Inizio="0.041" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="1.420" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="111.765" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="255.212" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="233.143" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="365.557" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="23.489" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="241962111" Name="Global Love" Artist="High Contrast"
+           Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="15924935"
+           TotalTime="378" DiscNumber="0" TrackNumber="14" Year="2022" AverageBpm="173.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2014%20Global%20Love.mp3"
+           Remixer="" Tonality="12B" Label="" Mix="">
+      <TEMPO Inizio="0.042" Bpm="173.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="1.429" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="134.609" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="273.338" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="245.592" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="362.124" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="68.019" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="90.215" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="205645409" Name="Exposé" Artist="High Contrast" Composer=""
+           Album="True Colours (20th Anniversary Edition + Remixes)" Grouping=""
+           Genre="Drum &amp; Bass" Kind="MP3 File" Size="16068090" TotalTime="382"
+           DiscNumber="0" TrackNumber="15" Year="2022" AverageBpm="173.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2015%20Expos%c3%a9.mp3"
+           Remixer="" Tonality="8A" Label="" Mix="">
+      <TEMPO Inizio="0.058" Bpm="173.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="112.428" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="23.642" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="278.902" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="256.706" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="378.787" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="68.035" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="251372572" Name="Passion" Artist="High Contrast" Composer=""
+           Album="True Colours (20th Anniversary Edition + Remixes)" Grouping=""
+           Genre="Drum &amp; Bass" Kind="MP3 File" Size="17411821" TotalTime="415"
+           DiscNumber="0" TrackNumber="16" Year="2022" AverageBpm="173.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2016%20Passion.mp3"
+           Remixer="" Tonality="3A" Label="" Mix="">
+      <TEMPO Inizio="0.005" Bpm="173.00" Metro="4/4" Battito="4"/>
+      <POSITION_MARK Name="" Type="0" Start="100.236" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.352" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="78.039" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="300.002" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="322.199" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="410.984" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="11.450" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="58934299" Name="Make It Tonight" Artist="High Contrast"
+           Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="18934245"
+           TotalTime="454" DiscNumber="0" TrackNumber="17" Year="2022" AverageBpm="173.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2017%20Make%20It%20Tonight.mp3"
+           Remixer="" Tonality="8A" Label="" Mix="">
+      <TEMPO Inizio="0.092" Bpm="173.00" Metro="4/4" Battito="4"/>
+      <POSITION_MARK Name="" Type="0" Start="0.439" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="133.620" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="89.226" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="311.195" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="355.588" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="444.376" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="168115049" Name="Music Is Everything" Artist="High Contrast"
+           Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="19019931"
+           TotalTime="456" DiscNumber="0" TrackNumber="18" Year="2022" AverageBpm="173.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="102" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2018%20Music%20Is%20Everything.mp3"
+           Remixer="" Tonality="7A" Label="" Mix="">
+      <TEMPO Inizio="0.053" Bpm="173.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="45.833" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="1.440" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="267.799" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="312.192" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="134.619" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="445.371" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="126094009" Name="Remember When" Artist="High Contrast"
+           Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="18313574"
+           TotalTime="438" DiscNumber="0" TrackNumber="19" Year="2022" AverageBpm="173.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="1" Rating="102" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2019%20Remember%20When.mp3"
+           Remixer="" Tonality="9B" Label="" Mix="">
+      <TEMPO Inizio="0.049" Bpm="173.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="1.437" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="68.026" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="179.009" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="334.384" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="289.991" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="156.812" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="423.171" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="200005872" Name="Savoir Faire" Artist="High Contrast"
+           Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="15756707"
+           TotalTime="374" DiscNumber="0" TrackNumber="20" Year="2022" AverageBpm="173.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="2" Rating="153" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2020%20Savoir%20Faire.mp3"
+           Remixer="" Tonality="7A" Label="" Mix="">
+      <TEMPO Inizio="0.056" Bpm="173.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="1.443" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="112.426" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="245.605" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="289.998" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="367.686" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="23.640" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="90.229" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="204663051" Name="Mermaid Scar" Artist="High Contrast"
+           Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="18500609"
+           TotalTime="443" DiscNumber="0" TrackNumber="21" Year="2022" AverageBpm="173.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2021%20Mermaid%20Scar.mp3"
+           Remixer="" Tonality="3A" Label="" Mix="">
+      <TEMPO Inizio="0.127" Bpm="173.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.127" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="133.306" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="183.248" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="205.445" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="383.017" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="427.409" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.520" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="135948621" Name="Amen Sister" Artist="High Contrast"
+           Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="20347988"
+           TotalTime="489" DiscNumber="0" TrackNumber="22" Year="2022" AverageBpm="173.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="1" Rating="153" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2022%20Amen%20Sister.mp3"
+           Remixer="" Tonality="4B" Label="" Mix="">
+      <TEMPO Inizio="0.040" Bpm="173.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="1.427" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="253.913" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="156.803" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="68.017" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="475.878" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="245.589" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="387.092" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="224924357" Name="Fool&apos;s Gold" Artist="High Contrast"
+           Composer="" Album="True Colours (20th Anniversary Edition + Remixes)"
+           Grouping="" Genre="Drum &amp; Bass" Kind="MP3 File" Size="17034617"
+           TotalTime="406" DiscNumber="0" TrackNumber="23" Year="2022" AverageBpm="173.00"
+           DateAdded="2024-01-30" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="51" Location="file://localhost/D:/Home/Music/DJ/High%20Contrast/True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)/High%20Contrast%20-%20True%20Colours%20(20th%20Anniversary%20Edition%20+%20Remixes)%20-%2023%20Fool%27s%20Gold.mp3"
+           Remixer="" Tonality="1A" Label="" Mix="">
+      <TEMPO Inizio="0.054" Bpm="173.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.054" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.841" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.447" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="177.627" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="199.823" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="399.593" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="123626262" Name="LTJ Bukem - Horizons (Komatic Rework) (High EQ)"
+           Artist="" Composer="" Album="" Grouping="" Genre="" Kind="MP3 File"
+           Size="12290133" TotalTime="307" DiscNumber="0" TrackNumber="0"
+           Year="0" AverageBpm="175.00" DateAdded="2024-01-30" BitRate="320"
+           SampleRate="44100" Comments="" PlayCount="2" Rating="255" Location="file://localhost/D:/Home/Music/DJ/Technimatic/LTJ%20Bukem%20-%20Horizons%20(Komatic%20Rework)/LTJ%20Bukem%20-%20Horizons%20(Komatic%20Rework)%20(High%20EQ).mp3"
+           Remixer="" Tonality="4A" Label="" Mix="">
+      <TEMPO Inizio="0.025" Bpm="175.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="2.768" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="112.482" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="24.711" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="68.597" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="222.197" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="200.254" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="298.997" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="61131144" Name="LTJ Bukem - Horizons (Komatic Rework)"
+           Artist="" Composer="" Album="" Grouping="" Genre="Drum &amp; Bass"
+           Kind="MP3 File" Size="12249401" TotalTime="306" DiscNumber="0"
+           TrackNumber="7012451" Year="0" AverageBpm="175.00" DateAdded="2024-01-30"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="255"
+           Location="file://localhost/D:/Home/Music/DJ/Technimatic/LTJ%20Bukem%20-%20Horizons%20(Komatic%20Rework)/LTJ%20Bukem%20-%20Horizons%20(Komatic%20Rework).mp3"
+           Remixer="" Tonality="4A" Label="" Mix="">
+      <TEMPO Inizio="0.025" Bpm="175.00" Metro="4/4" Battito="4"/>
+      <POSITION_MARK Name="" Type="0" Start="22.311" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.197" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.368" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="110.082" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="197.853" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="219.796" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="296.596" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="14477679" Name="All Over The World (Original)" Artist="Nu:Tone"
+           Composer="" Album="Brave Nu World" Grouping="" Genre="Electronica"
+           Kind="MP3 File" Size="12089948" TotalTime="291" DiscNumber="0"
+           TrackNumber="1" Year="2005" AverageBpm="174.00" DateAdded="2024-02-12"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/NuTone/Brave%20Nu%20World/nutone-all-over-the-world-original.mp3"
+           Remixer="" Tonality="4A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.221" Bpm="174.00" Metro="4/4" Battito="3"/>
+      <POSITION_MARK Name="" Type="0" Start="0.221" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.980" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="133.324" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="111.255" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="243.669" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="287.807" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="221.600" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="156057922" Name="Countdown (Original)" Artist="Nu:Tone &amp; Logistics "
+           Composer="" Album="Brave Nu World" Grouping="" Genre="Electronica"
+           Kind="MP3 File" Size="11168352" TotalTime="268" DiscNumber="0"
+           TrackNumber="1" Year="2005" AverageBpm="174.00" DateAdded="2024-02-12"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/NuTone/Brave%20Nu%20World/nutone-and-logistics-countdown-original.mp3"
+           Remixer="" Tonality="4A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.051" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.051" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.189" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.120" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="154.534" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="132.465" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="264.879" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.810" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="160494550" Name="Breathless (Original)" Artist="Nu:Tone"
+           Composer="" Album="Brave Nu World" Grouping="" Genre="Electronica"
+           Kind="MP3 File" Size="17523409" TotalTime="427" DiscNumber="0"
+           TrackNumber="1" Year="2005" AverageBpm="174.00" DateAdded="2024-02-12"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/NuTone/Brave%20Nu%20World/nutone-breathless-original.mp3"
+           Remixer="" Tonality="6A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.137" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.137" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.413" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.275" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="309.104" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="287.035" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="419.449" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="375.311" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="141582264" Name="Can We? (Original)" Artist="Nu:Tone"
+           Composer="" Album="Brave Nu World" Grouping="" Genre="Electronica"
+           Kind="MP3 File" Size="14680239" TotalTime="356" DiscNumber="0"
+           TrackNumber="1" Year="2005" AverageBpm="174.70" DateAdded="2024-02-12"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/NuTone/Brave%20Nu%20World/nutone-can-we-original.mp3"
+           Remixer="" Tonality="9B" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.129" Bpm="174.70" Metro="4/4" Battito="1"/>
+      <TEMPO Inizio="0.473" Bpm="174.70" Metro="4/4" Battito="2"/>
+      <TEMPO Inizio="38.596" Bpm="174.70" Metro="4/4" Battito="1"/>
+      <TEMPO Inizio="143.691" Bpm="174.70" Metro="4/4" Battito="3"/>
+      <TEMPO Inizio="248.786" Bpm="174.70" Metro="4/4" Battito="1"/>
+      <TEMPO Inizio="337.739" Bpm="174.70" Metro="4/4" Battito="4"/>
+      <POSITION_MARK Name="" Type="0" Start="0.129" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.052" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="175.975" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="285.878" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="263.897" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="153.994" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.071" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="351.820" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="161434668" Name="Ebb + Flow (Original)" Artist="Nu:Tone"
+           Composer="" Album="Brave Nu World" Grouping="" Genre="Electronica"
+           Kind="MP3 File" Size="14735622" TotalTime="357" DiscNumber="0"
+           TrackNumber="1" Year="2005" AverageBpm="174.00" DateAdded="2024-02-12"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/NuTone/Brave%20Nu%20World/nutone-ebb-flow-original.mp3"
+           Remixer="" Tonality="7A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.045" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.045" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="132.459" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.321" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.804" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.735" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.252" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="309.011" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="353.149" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="116240095" Name="Feel It (Original)" Artist="Nu:Tone"
+           Composer="" Album="Brave Nu World" Grouping="" Genre="Electronica"
+           Kind="MP3 File" Size="14746068" TotalTime="358" DiscNumber="0"
+           TrackNumber="1" Year="2005" AverageBpm="174.00" DateAdded="2024-02-12"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/NuTone/Brave%20Nu%20World/nutone-feel-it-original.mp3"
+           Remixer="" Tonality="8B" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.045" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="89.700" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="200.045" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="1.424" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="67.631" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="222.114" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="332.459" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="354.528" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="143327894" Name="Heaven Sent (Original)" Artist="Nu:Tone"
+           Composer="" Album="Brave Nu World" Grouping="" Genre="Electronica"
+           Kind="MP3 File" Size="11238349" TotalTime="270" DiscNumber="0"
+           TrackNumber="1" Year="2005" AverageBpm="174.00" DateAdded="2024-02-12"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/NuTone/Brave%20Nu%20World/nutone-heaven-sent-original.mp3"
+           Remixer="" Tonality="2A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.232" Bpm="174.00" Metro="4/4" Battito="3"/>
+      <POSITION_MARK Name="" Type="0" Start="0.232" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="67.128" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="177.472" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="155.404" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="243.679" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="265.748" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="46799252" Name="New Boy (Original)" Artist="Nu:Tone"
+           Composer="" Album="Brave Nu World" Grouping="" Genre="Electronica"
+           Kind="MP3 File" Size="10390933" TotalTime="249" DiscNumber="0"
+           TrackNumber="1" Year="2005" AverageBpm="174.00" DateAdded="2024-02-12"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/NuTone/Brave%20Nu%20World/nutone-new-boy-original.mp3"
+           Remixer="" Tonality="3A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.085" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.085" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.223" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.291" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="154.567" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.636" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.774" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.842" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="155500683" Name="Right Now (Original)" Artist="Nu:Tone"
+           Composer="" Album="Brave Nu World" Grouping="" Genre="Electronica"
+           Kind="MP3 File" Size="13731474" TotalTime="332" DiscNumber="0"
+           TrackNumber="1" Year="2005" AverageBpm="174.00" DateAdded="2024-02-12"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/NuTone/Brave%20Nu%20World/nutone-right-now-original.mp3"
+           Remixer="" Tonality="6A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.207" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.207" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.483" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.345" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.898" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="198.829" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="309.174" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="287.105" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="331.243" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="125345566" Name="Seven Years (Original)" Artist="Nu:Tone"
+           Composer="" Album="Brave Nu World" Grouping="Inconsistent Tempo"
+           Genre="Electronica" Kind="MP3 File" Size="12534023" TotalTime="302"
+           DiscNumber="0" TrackNumber="1" Year="2005" AverageBpm="168.73"
+           DateAdded="2024-02-12" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/NuTone/Brave%20Nu%20World/nutone-seven-years-original.mp3"
+           Remixer="" Tonality="7B" Label="Hospital Records" Mix="" Colour="0xFFA500">
+      <TEMPO Inizio="0.101" Bpm="168.73" Metro="4/4" Battito="1"/>
+      <TEMPO Inizio="1.523" Bpm="172.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.420" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="8929732" Name="Strange Encounter (Original)" Artist="Nu:Tone"
+           Composer="" Album="Brave Nu World" Grouping="" Genre="Electronica"
+           Kind="MP3 File" Size="13151563" TotalTime="318" DiscNumber="0"
+           TrackNumber="1" Year="2005" AverageBpm="172.00" DateAdded="2024-02-12"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/NuTone/Brave%20Nu%20World/nutone-strange-encounter-original.mp3"
+           Remixer="" Tonality="7A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.143" Bpm="172.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.143" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="89.445" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="156.422" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="201.074" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="312.702" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.468" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.794" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="290.377" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="55333452" Name="Three Bags Full (Original)" Artist="Nu:Tone"
+           Composer="" Album="Brave Nu World" Grouping="" Genre="Electronica"
+           Kind="MP3 File" Size="14957145" TotalTime="363" DiscNumber="0"
+           TrackNumber="1" Year="2005" AverageBpm="174.00" DateAdded="2024-02-12"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/NuTone/Brave%20Nu%20World/nutone-three-bags-full-original.mp3"
+           Remixer="" Tonality="5B" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.144" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.144" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="110.144" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.075" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="21.868" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.489" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.558" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="353.247" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="309.109" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="76620191" Name="Beatnik (Original)" Artist="Nu:Tone"
+           Composer="Dan Gresham" Album="Back Of Beyond" Grouping="" Genre="Rock"
+           Kind="MP3 File" Size="12627675" TotalTime="314" DiscNumber="0"
+           TrackNumber="1" Year="2007" AverageBpm="174.00" DateAdded="2024-02-12"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/NuTone/Back%20Of%20Beyond/nutone-beatnik-original.mp3"
+           Remixer="" Tonality="4A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.320" Bpm="174.00" Metro="4/4" Battito="3"/>
+      <POSITION_MARK Name="" Type="0" Start="0.320" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="68.596" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="223.078" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="178.940" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="267.215" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="311.353" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="24.458" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="22452153" Name="Beliefs (Original)" Artist="Nu:Tone"
+           Composer="Dan Gresham/Pat Flugoni/Pat Fulgoni" Album="Back Of Beyond"
+           Grouping="" Genre="Rock" Kind="MP3 File" Size="9910941" TotalTime="246"
+           DiscNumber="0" TrackNumber="1" Year="2007" AverageBpm="174.00"
+           DateAdded="2024-02-12" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/NuTone/Back%20Of%20Beyond/nutone-beliefs-original.mp3"
+           Remixer="" Tonality="6A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.126" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.126" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.333" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.264" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.678" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="132.540" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.885" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.816" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="205146317" Name="Deep Old (Original)" Artist="Nu:Tone"
+           Composer="Dan Gresham" Album="Back Of Beyond" Grouping="" Genre="Rock"
+           Kind="MP3 File" Size="10048868" TotalTime="249" DiscNumber="0"
+           TrackNumber="1" Year="2007" AverageBpm="174.00" DateAdded="2024-02-12"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="102"
+           Location="file://localhost/D:/Home/Music/DJ/NuTone/Back%20Of%20Beyond/nutone-deep-old-original.mp3"
+           Remixer="" Tonality="9B" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.065" Bpm="174.00" Metro="4/4" Battito="4"/>
+      <POSITION_MARK Name="" Type="0" Start="0.410" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.548" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="154.893" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="132.824" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="221.099" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="243.168" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.479" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="117599476" Name="Goofy (Original)" Artist="Nu:Tone"
+           Composer="Dan Gresham" Album="Back Of Beyond" Grouping="" Genre="Rock"
+           Kind="MP3 File" Size="10015429" TotalTime="248" DiscNumber="0"
+           TrackNumber="1" Year="2007" AverageBpm="174.00" DateAdded="2024-02-12"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/NuTone/Back%20Of%20Beyond/nutone-goofy-original.mp3"
+           Remixer="" Tonality="5B" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.087" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.087" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.295" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.640" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="154.571" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.156" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.847" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.778" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="37541909" Name="Jet Stream (Original)" Artist="Nu:Tone"
+           Composer="Dan Gresham/James Knight/Nichol Thomson" Album="Back Of Beyond"
+           Grouping="" Genre="Rock" Kind="MP3 File" Size="12684101" TotalTime="315"
+           DiscNumber="0" TrackNumber="1" Year="2007" AverageBpm="174.00"
+           DateAdded="2024-02-12" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/NuTone/Back%20Of%20Beyond/nutone-jet-stream-original.mp3"
+           Remixer="" Tonality="10A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.095" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.095" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.371" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.785" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.302" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.647" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="309.061" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.233" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="239658450" Name="Missing Link (Original)" Artist="Nu:Tone"
+           Composer="Dan Gresham" Album="Back Of Beyond" Grouping="" Genre="Rock"
+           Kind="MP3 File" Size="11827289" TotalTime="294" DiscNumber="0"
+           TrackNumber="1" Year="2007" AverageBpm="174.00" DateAdded="2024-02-12"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="102"
+           Location="file://localhost/D:/Home/Music/DJ/NuTone/Back%20Of%20Beyond/nutone-missing-link-original.mp3"
+           Remixer="" Tonality="11A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.123" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.123" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.192" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.330" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="198.744" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.675" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="287.020" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="264.951" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="123688636" Name="Never Together (Original)" Artist="Nu:Tone"
+           Composer="Dan Gresham/Matt Gersham/Matt Gresham" Album="Back Of Beyond"
+           Grouping="" Genre="Rock" Kind="MP3 File" Size="10229642" TotalTime="254"
+           DiscNumber="0" TrackNumber="1" Year="2007" AverageBpm="174.00"
+           DateAdded="2024-02-12" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/NuTone/Back%20Of%20Beyond/nutone-never-together-original.mp3"
+           Remixer="" Tonality="9B" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.079" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.079" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.286" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.148" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.768" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.837" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="154.561" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="36384733" Name="Say Hello, Wave Goodbye (Original)"
+           Artist="Nu:Tone" Composer="Dan Gresham/Matt Gresham" Album="Back Of Beyond"
+           Grouping="" Genre="Rock" Kind="MP3 File" Size="12944296" TotalTime="321"
+           DiscNumber="0" TrackNumber="1" Year="2007" AverageBpm="172.00"
+           DateAdded="2024-02-12" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/NuTone/Back%20Of%20Beyond/nutone-say-hello-wave-goodbye-original.mp3"
+           Remixer="" Tonality="1A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.291" Bpm="172.00" Metro="4/4" Battito="2"/>
+      <POSITION_MARK Name="" Type="0" Start="0.291" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="47.385" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="25.059" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="292.967" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="315.293" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="225.990" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="248.316" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="136.687" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="135145854" Name="System (Original)" Artist="Nu:Tone"
+           Composer="Dan Gresham/Natalie Williams" Album="Back Of Beyond"
+           Grouping="" Genre="Rock" Kind="MP3 File" Size="11823103" TotalTime="293"
+           DiscNumber="0" TrackNumber="1" Year="2007" AverageBpm="174.00"
+           DateAdded="2024-02-12" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/NuTone/Back%20Of%20Beyond/nutone-system-original.mp3"
+           Remixer="" Tonality="6A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.024" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.024" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.231" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.093" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.713" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="198.644" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="264.851" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="286.920" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="227953597" Name="Take Me Back (Original)" Artist="Nu:Tone"
+           Composer="Dan Gresham/George Levings/Guy Brewer" Album="Back Of Beyond"
+           Grouping="" Genre="Rock" Kind="MP3 File" Size="13150129" TotalTime="327"
+           DiscNumber="0" TrackNumber="1" Year="2007" AverageBpm="178.00"
+           DateAdded="2024-02-12" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/NuTone/Back%20Of%20Beyond/nutone-take-me-back-original.mp3"
+           Remixer="" Tonality="7A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.165" Bpm="178.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.165" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="86.457" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="64.884" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="259.041" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="215.895" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="302.187" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="323.760" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="21.738" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="34410162" Name="The Boy Who Lost His Smile (Original)"
+           Artist="Nu:Tone" Composer="Dan Gresham" Album="Back Of Beyond"
+           Grouping="" Genre="Rock" Kind="MP3 File" Size="11768788" TotalTime="292"
+           DiscNumber="0" TrackNumber="1" Year="2007" AverageBpm="174.00"
+           DateAdded="2024-02-12" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/NuTone/Back%20Of%20Beyond/nutone-the-boy-who-lost-his-smile-original.mp3"
+           Remixer="" Tonality="4A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.159" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.333" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.366" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.297" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="198.780" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="154.642" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="264.987" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="287.056" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.228" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="131540963" Name="Up And Down (Original)" Artist="Nu:Tone"
+           Composer="Dan Gresham/Jonathan Backelie" Album="Back Of Beyond"
+           Grouping="" Genre="Rock" Kind="MP3 File" Size="11938047" TotalTime="296"
+           DiscNumber="0" TrackNumber="1" Year="2007" AverageBpm="172.00"
+           DateAdded="2024-02-12" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/NuTone/Back%20Of%20Beyond/nutone-up-and-down-original.mp3"
+           Remixer="" Tonality="8A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.135" Bpm="172.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.135" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="67.112" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.786" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="178.740" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="223.391" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="268.042" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="290.368" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="201.065" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="179147631" Name="What s Your Leisure? (Original)" Artist="Nu:Tone"
+           Composer="Dan Gresham/James Knight/Nichol Thomson" Album="Back Of Beyond"
+           Grouping="" Genre="Rock" Kind="MP3 File" Size="10816880" TotalTime="268"
+           DiscNumber="0" TrackNumber="1" Year="2007" AverageBpm="173.00"
+           DateAdded="2024-02-12" BitRate="320" SampleRate="44100" Comments=""
+           PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/NuTone/Back%20Of%20Beyond/nutone-what-s-your-leisure-original.mp3"
+           Remixer="" Tonality="2A" Label="Hospital Records" Mix="">
+      <TEMPO Inizio="0.104" Bpm="173.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.104" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.693" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.497" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="11.202" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="177.675" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="155.479" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="266.461" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="244.265" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="192730974" Name="For All Of Us" Artist="Technimatic"
+           Composer="" Album="For All Of Us LP" Grouping="" Genre="" Kind="MP3 File"
+           Size="4250530" TotalTime="99" DiscNumber="0" TrackNumber="1"
+           Year="2023" AverageBpm="0.00" DateAdded="2024-02-12" BitRate="320"
+           SampleRate="44100" Comments="" PlayCount="0" Rating="0" Location="file://localhost/D:/Home/Music/DJ/Technimatic/For%20All%20Of%20Us%20LP/Technimatic%20-%20For%20All%20Of%20Us%20LP%20-%2001%20For%20All%20Of%20Us.mp3"
+           Remixer="" Tonality="4A" Label="" Mix=""/>
+    <TRACK TrackID="174972032" Name="Coming Back" Artist="Technimatic" Composer=""
+           Album="For All Of Us LP" Grouping="" Genre="" Kind="MP3 File"
+           Size="11340160" TotalTime="276" DiscNumber="0" TrackNumber="2"
+           Year="2023" AverageBpm="174.00" DateAdded="2024-02-12" BitRate="320"
+           SampleRate="44100" Comments="" PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/Technimatic/For%20All%20Of%20Us%20LP/Technimatic%20-%20For%20All%20Of%20Us%20LP%20-%2002%20Coming%20Back.mp3"
+           Remixer="" Tonality="4A" Label="" Mix="">
+      <TEMPO Inizio="0.025" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.025" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.301" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.163" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="198.644" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="154.507" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.782" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="264.851" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="174347057" Name="Help You Stay (ft. Ruth Royall)" Artist="Technimatic"
+           Composer="" Album="For All Of Us LP" Grouping="" Genre="" Kind="MP3 File"
+           Size="11257633" TotalTime="274" DiscNumber="0" TrackNumber="3"
+           Year="2023" AverageBpm="174.00" DateAdded="2024-02-12" BitRate="320"
+           SampleRate="44100" Comments="" PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/Technimatic/For%20All%20Of%20Us%20LP/Technimatic%20-%20For%20All%20Of%20Us%20LP%20-%2003%20Help%20You%20Stay%20(ft.%20Ruth%20Royall).mp3"
+           Remixer="" Tonality="5A" Label="" Mix="">
+      <TEMPO Inizio="0.025" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.025" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.094" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.301" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="198.646" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.577" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.784" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.163" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="264.853" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="22574911" Name="Sunburst" Artist="Technimatic" Composer=""
+           Album="For All Of Us LP" Grouping="" Genre="" Kind="MP3 File"
+           Size="11202231" TotalTime="273" DiscNumber="0" TrackNumber="4"
+           Year="2023" AverageBpm="174.00" DateAdded="2024-02-12" BitRate="320"
+           SampleRate="44100" Comments="" PlayCount="0" Rating="204" Location="file://localhost/D:/Home/Music/DJ/Technimatic/For%20All%20Of%20Us%20LP/Technimatic%20-%20For%20All%20Of%20Us%20LP%20-%2004%20Sunburst.mp3"
+           Remixer="" Tonality="4A" Label="" Mix="">
+      <TEMPO Inizio="0.029" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.029" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.167" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.236" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="154.511" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="198.649" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="264.856" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.787" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="258583902" Name="Departure" Artist="Technimatic" Composer=""
+           Album="For All Of Us LP" Grouping="" Genre="" Kind="MP3 File"
+           Size="10347505" TotalTime="251" DiscNumber="0" TrackNumber="5"
+           Year="2023" AverageBpm="174.00" DateAdded="2024-02-12" BitRate="320"
+           SampleRate="44100" Comments="" PlayCount="0" Rating="102" Location="file://localhost/D:/Home/Music/DJ/Technimatic/For%20All%20Of%20Us%20LP/Technimatic%20-%20For%20All%20Of%20Us%20LP%20-%2005%20Departure.mp3"
+           Remixer="" Tonality="7B" Label="" Mix="">
+      <TEMPO Inizio="0.025" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.025" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.231" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.163" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="132.438" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.576" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.714" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.783" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="185513366" Name="Colour Me In (ft. Zara Kershaw)" Artist="Technimatic"
+           Composer="" Album="For All Of Us LP" Grouping="" Genre="" Kind="MP3 File"
+           Size="11284801" TotalTime="275" DiscNumber="0" TrackNumber="6"
+           Year="2023" AverageBpm="174.00" DateAdded="2024-02-12" BitRate="320"
+           SampleRate="44100" Comments="" PlayCount="0" Rating="102" Location="file://localhost/D:/Home/Music/DJ/Technimatic/For%20All%20Of%20Us%20LP/Technimatic%20-%20For%20All%20Of%20Us%20LP%20-%2006%20Colour%20Me%20In%20(ft.%20Zara%20Kershaw).mp3"
+           Remixer="" Tonality="6A" Label="" Mix="">
+      <TEMPO Inizio="0.025" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.025" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.094" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.301" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.577" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="198.646" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.784" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="264.853" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.163" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="239054492" Name="Moment To Moment" Artist="Technimatic"
+           Composer="" Album="For All Of Us LP" Grouping="" Genre="" Kind="MP3 File"
+           Size="11212688" TotalTime="273" DiscNumber="0" TrackNumber="7"
+           Year="2023" AverageBpm="174.00" DateAdded="2024-02-12" BitRate="320"
+           SampleRate="44100" Comments="" PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/Technimatic/For%20All%20Of%20Us%20LP/Technimatic%20-%20For%20All%20Of%20Us%20LP%20-%2007%20Moment%20To%20Moment.mp3"
+           Remixer="" Tonality="5A" Label="" Mix="">
+      <TEMPO Inizio="0.025" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.025" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.301" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="154.508" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.714" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="264.852" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.163" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.577" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="157643278" Name="Under The Skin (ft. Blocksberg)" Artist="Technimatic"
+           Composer="" Album="For All Of Us LP" Grouping="" Genre="" Kind="MP3 File"
+           Size="10319315" TotalTime="251" DiscNumber="0" TrackNumber="8"
+           Year="2023" AverageBpm="174.00" DateAdded="2024-02-12" BitRate="320"
+           SampleRate="44100" Comments="" PlayCount="0" Rating="102" Location="file://localhost/D:/Home/Music/DJ/Technimatic/For%20All%20Of%20Us%20LP/Technimatic%20-%20For%20All%20Of%20Us%20LP%20-%2008%20Under%20The%20Skin%20(ft.%20Blocksberg).mp3"
+           Remixer="" Tonality="7A" Label="" Mix="">
+      <TEMPO Inizio="0.026" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.026" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.232" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="154.508" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.576" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.714" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.783" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.094" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="26736241" Name="Shifting Sands" Artist="Technimatic"
+           Composer="" Album="For All Of Us LP" Grouping="" Genre="" Kind="MP3 File"
+           Size="12082041" TotalTime="295" DiscNumber="0" TrackNumber="9"
+           Year="2023" AverageBpm="174.00" DateAdded="2024-02-12" BitRate="320"
+           SampleRate="44100" Comments="" PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/Technimatic/For%20All%20Of%20Us%20LP/Technimatic%20-%20For%20All%20Of%20Us%20LP%20-%2009%20Shifting%20Sands.mp3"
+           Remixer="" Tonality="6A" Label="" Mix="">
+      <TEMPO Inizio="0.026" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.026" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.302" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.577" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.715" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="264.853" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.164" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="171362860" Name="Give Love" Artist="Technimatic" Composer=""
+           Album="For All Of Us LP" Grouping="" Genre="" Kind="MP3 File"
+           Size="10347506" TotalTime="251" DiscNumber="0" TrackNumber="10"
+           Year="2023" AverageBpm="174.00" DateAdded="2024-02-12" BitRate="320"
+           SampleRate="44100" Comments="" PlayCount="0" Rating="204" Location="file://localhost/D:/Home/Music/DJ/Technimatic/For%20All%20Of%20Us%20LP/Technimatic%20-%20For%20All%20Of%20Us%20LP%20-%2010%20Give%20Love.mp3"
+           Remixer="" Tonality="5A" Label="" Mix="">
+      <TEMPO Inizio="0.026" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.026" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.233" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.164" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="132.440" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.578" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.716" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.785" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.095" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="97387049" Name="Aftermath" Artist="Technimatic" Composer=""
+           Album="For All Of Us LP" Grouping="" Genre="" Kind="MP3 File"
+           Size="9685041" TotalTime="235" DiscNumber="0" TrackNumber="11"
+           Year="2023" AverageBpm="174.00" DateAdded="2024-02-12" BitRate="320"
+           SampleRate="44100" Comments="" PlayCount="0" Rating="102" Location="file://localhost/D:/Home/Music/DJ/Technimatic/For%20All%20Of%20Us%20LP/Technimatic%20-%20For%20All%20Of%20Us%20LP%20-%2011%20Aftermath.mp3"
+           Remixer="" Tonality="6A" Label="" Mix="">
+      <TEMPO Inizio="0.026" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.026" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.164" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.233" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="135.198" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="157.267" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="204.164" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="226.233" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="258305879" Name="Risk Everything (ft. DRS)" Artist="Technimatic"
+           Composer="" Album="For All Of Us LP" Grouping="" Genre="" Kind="MP3 File"
+           Size="11313008" TotalTime="275" DiscNumber="0" TrackNumber="12"
+           Year="2023" AverageBpm="174.00" DateAdded="2024-02-12" BitRate="320"
+           SampleRate="44100" Comments="" PlayCount="0" Rating="153" Location="file://localhost/D:/Home/Music/DJ/Technimatic/For%20All%20Of%20Us%20LP/Technimatic%20-%20For%20All%20Of%20Us%20LP%20-%2012%20Risk%20Everything%20(ft.%20DRS).mp3"
+           Remixer="" Tonality="8A" Label="" Mix="">
+      <TEMPO Inizio="0.022" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.160" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.298" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.573" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="198.642" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.780" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="264.849" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.022" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.091" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="51799075" Name="You Call Me" Artist="Technimatic" Composer=""
+           Album="For All Of Us LP" Grouping="" Genre="" Kind="MP3 File"
+           Size="12416406" TotalTime="303" DiscNumber="0" TrackNumber="13"
+           Year="2023" AverageBpm="174.00" DateAdded="2024-02-12" BitRate="320"
+           SampleRate="44100" Comments="" PlayCount="0" Rating="51" Location="file://localhost/D:/Home/Music/DJ/Technimatic/For%20All%20Of%20Us%20LP/Technimatic%20-%20For%20All%20Of%20Us%20LP%20-%2013%20You%20Call%20Me.mp3"
+           Remixer="" Tonality="12B" Label="" Mix="">
+      <TEMPO Inizio="0.026" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.026" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.302" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.578" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.785" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="286.922" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.233" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="220.716" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="100044404" Name="Where It Begins" Artist="Technimatic"
+           Composer="" Album="For All Of Us LP" Grouping="" Genre="" Kind="MP3 File"
+           Size="12636884" TotalTime="309" DiscNumber="0" TrackNumber="14"
+           Year="2023" AverageBpm="174.00" DateAdded="2024-02-12" BitRate="320"
+           SampleRate="44100" Comments="" PlayCount="0" Rating="204" Location="file://localhost/D:/Home/Music/DJ/Technimatic/For%20All%20Of%20Us%20LP/Technimatic%20-%20For%20All%20Of%20Us%20LP%20-%2014%20Where%20It%20Begins.mp3"
+           Remixer="" Tonality="4A" Label="" Mix="">
+      <TEMPO Inizio="0.025" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.025" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="110.370" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.094" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.232" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="198.646" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.783" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="286.921" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="100709394" Name="Come Undone (ft. Lauren Archer) (Digital Bonus Track)"
+           Artist="Technimatic" Composer="" Album="For All Of Us LP" Grouping=""
+           Genre="" Kind="MP3 File" Size="11974456" TotalTime="292" DiscNumber="0"
+           TrackNumber="15" Year="2023" AverageBpm="174.00" DateAdded="2024-02-12"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="102"
+           Location="file://localhost/D:/Home/Music/DJ/Technimatic/For%20All%20Of%20Us%20LP/Technimatic%20-%20For%20All%20Of%20Us%20LP%20-%2015%20Come%20Undone%20(ft.%20Lauren%20Archer)%20(Digital%20Bonus%20Track).mp3"
+           Remixer="" Tonality="4A" Label="" Mix="">
+      <TEMPO Inizio="0.025" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.025" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="88.302" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="176.578" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="198.647" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="264.854" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="286.923" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.094" Num="-1"/>
+    </TRACK>
+    <TRACK TrackID="251704443" Name="Breath Sequence (Digital Bonus Track)"
+           Artist="Technimatic" Composer="" Album="For All Of Us LP" Grouping=""
+           Genre="" Kind="MP3 File" Size="11262865" TotalTime="274" DiscNumber="0"
+           TrackNumber="16" Year="2023" AverageBpm="174.00" DateAdded="2024-02-12"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="153"
+           Location="file://localhost/D:/Home/Music/DJ/Technimatic/For%20All%20Of%20Us%20LP/Technimatic%20-%20For%20All%20Of%20Us%20LP%20-%2016%20Breath%20Sequence%20(Digital%20Bonus%20Track).mp3"
+           Remixer="" Tonality="4A" Label="" Mix="">
+      <TEMPO Inizio="0.028" Bpm="174.00" Metro="4/4" Battito="1"/>
+      <POSITION_MARK Name="" Type="0" Start="0.028" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="66.233" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="154.506" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="198.643" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="242.779" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="264.847" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="44.165" Num="-1"/>
+      <POSITION_MARK Name="" Type="0" Start="22.097" Num="-1"/>
+    </TRACK>
+  </COLLECTION>
+  <PLAYLISTS>
+    <NODE Type="0" Name="ROOT" Count="5">
+      <NODE Name="In1: MemQ" Type="1" KeyType="0" Entries="2">
+        <TRACK Key="125345566"/>
+        <TRACK Key="192730974"/>
+      </NODE>
+      <NODE Name="Everything" Type="1" KeyType="0" Entries="58">
+        <TRACK Key="191647666"/>
+        <TRACK Key="224924357"/>
+        <TRACK Key="238832877"/>
+        <TRACK Key="36384733"/>
+        <TRACK Key="179147631"/>
+        <TRACK Key="143327894"/>
+        <TRACK Key="197220636"/>
+        <TRACK Key="154831197"/>
+        <TRACK Key="66231382"/>
+        <TRACK Key="251372572"/>
+        <TRACK Key="204663051"/>
+        <TRACK Key="46799252"/>
+        <TRACK Key="123626262"/>
+        <TRACK Key="61131144"/>
+        <TRACK Key="76620191"/>
+        <TRACK Key="34410162"/>
+        <TRACK Key="14477679"/>
+        <TRACK Key="156057922"/>
+        <TRACK Key="46023419"/>
+        <TRACK Key="135948621"/>
+        <TRACK Key="245923634"/>
+        <TRACK Key="73812583"/>
+        <TRACK Key="117599476"/>
+        <TRACK Key="55333452"/>
+        <TRACK Key="101202870"/>
+        <TRACK Key="22452153"/>
+        <TRACK Key="135145854"/>
+        <TRACK Key="160494550"/>
+        <TRACK Key="155500683"/>
+        <TRACK Key="24912024"/>
+        <TRACK Key="168115049"/>
+        <TRACK Key="200005872"/>
+        <TRACK Key="227953597"/>
+        <TRACK Key="161434668"/>
+        <TRACK Key="8929732"/>
+        <TRACK Key="87312942"/>
+        <TRACK Key="50307115"/>
+        <TRACK Key="136350645"/>
+        <TRACK Key="164124972"/>
+        <TRACK Key="103110201"/>
+        <TRACK Key="205645409"/>
+        <TRACK Key="58934299"/>
+        <TRACK Key="131540963"/>
+        <TRACK Key="116240095"/>
+        <TRACK Key="194760878"/>
+        <TRACK Key="187985905"/>
+        <TRACK Key="245376065"/>
+        <TRACK Key="76109021"/>
+        <TRACK Key="126094009"/>
+        <TRACK Key="205146317"/>
+        <TRACK Key="123688636"/>
+        <TRACK Key="141582264"/>
+        <TRACK Key="37541909"/>
+        <TRACK Key="35437470"/>
+        <TRACK Key="234591329"/>
+        <TRACK Key="239658450"/>
+        <TRACK Key="179322546"/>
+        <TRACK Key="241962111"/>
+      </NODE>
+      <NODE Name="Jungle General" Type="1" KeyType="0" Entries="4">
+        <TRACK Key="191647666"/>
+        <TRACK Key="117599476"/>
+        <TRACK Key="87312942"/>
+        <TRACK Key="123688636"/>
+      </NODE>
+      <NODE Name="DnB General" Type="1" KeyType="0" Entries="11">
+        <TRACK Key="66231382"/>
+        <TRACK Key="123626262"/>
+        <TRACK Key="245923634"/>
+        <TRACK Key="26736241"/>
+        <TRACK Key="87312942"/>
+        <TRACK Key="50307115"/>
+        <TRACK Key="103110201"/>
+        <TRACK Key="76109021"/>
+        <TRACK Key="35437470"/>
+        <TRACK Key="234591329"/>
+        <TRACK Key="241962111"/>
+      </NODE>
+      <NODE Name="Liquid General" Type="1" KeyType="0" Entries="64">
+        <TRACK Key="224924357"/>
+        <TRACK Key="238832877"/>
+        <TRACK Key="36384733"/>
+        <TRACK Key="179147631"/>
+        <TRACK Key="143327894"/>
+        <TRACK Key="197220636"/>
+        <TRACK Key="154831197"/>
+        <TRACK Key="251372572"/>
+        <TRACK Key="204663051"/>
+        <TRACK Key="46799252"/>
+        <TRACK Key="123626262"/>
+        <TRACK Key="76620191"/>
+        <TRACK Key="34410162"/>
+        <TRACK Key="14477679"/>
+        <TRACK Key="156057922"/>
+        <TRACK Key="46023419"/>
+        <TRACK Key="174972032"/>
+        <TRACK Key="22574911"/>
+        <TRACK Key="100044404"/>
+        <TRACK Key="100709394"/>
+        <TRACK Key="251704443"/>
+        <TRACK Key="135948621"/>
+        <TRACK Key="245923634"/>
+        <TRACK Key="73812583"/>
+        <TRACK Key="174347057"/>
+        <TRACK Key="239054492"/>
+        <TRACK Key="171362860"/>
+        <TRACK Key="55333452"/>
+        <TRACK Key="101202870"/>
+        <TRACK Key="22452153"/>
+        <TRACK Key="135145854"/>
+        <TRACK Key="160494550"/>
+        <TRACK Key="155500683"/>
+        <TRACK Key="185513366"/>
+        <TRACK Key="26736241"/>
+        <TRACK Key="97387049"/>
+        <TRACK Key="24912024"/>
+        <TRACK Key="168115049"/>
+        <TRACK Key="200005872"/>
+        <TRACK Key="227953597"/>
+        <TRACK Key="161434668"/>
+        <TRACK Key="8929732"/>
+        <TRACK Key="157643278"/>
+        <TRACK Key="258583902"/>
+        <TRACK Key="136350645"/>
+        <TRACK Key="164124972"/>
+        <TRACK Key="103110201"/>
+        <TRACK Key="205645409"/>
+        <TRACK Key="58934299"/>
+        <TRACK Key="131540963"/>
+        <TRACK Key="258305879"/>
+        <TRACK Key="116240095"/>
+        <TRACK Key="194760878"/>
+        <TRACK Key="187985905"/>
+        <TRACK Key="245376065"/>
+        <TRACK Key="126094009"/>
+        <TRACK Key="205146317"/>
+        <TRACK Key="141582264"/>
+        <TRACK Key="37541909"/>
+        <TRACK Key="35437470"/>
+        <TRACK Key="234591329"/>
+        <TRACK Key="239658450"/>
+        <TRACK Key="179322546"/>
+        <TRACK Key="51799075"/>
+      </NODE>
+    </NODE>
+  </PLAYLISTS>
+</DJ_PLAYLISTS>

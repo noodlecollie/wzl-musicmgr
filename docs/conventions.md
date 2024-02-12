@@ -24,32 +24,13 @@ Consequently, hot cues should *not* usually be placed on a boundary between two 
 
 ## Hot Cue Banks
 
-Older CDJ controllers may only have three hot cue buttons available; therefore, the first three hot cues should always be reserved for the three most appropriate sections of runway in a track. This is usually:
+Older CDJ controllers may only have three hot cue buttons available; therefore, the first three hot cues should always be reserved for the three most appropriate sections of runway in a track.
 
-* **A:** One phrase before the first drop.
-* **B:** Two phrases before the first drop - particularly if there is a breakdown before the first drop, in which case it provides runway to this.
-* **C:** One phrase before the middle breakdown.
-
-Newer CDJ controllers may have two separate banks of four hot cues, making a total of eight. Since the first bank will be active by default, it should be used to store the most convenient set of hot cues, and the second bank may be used to store hot cues which do not need to be as readily available. For example, loops could be stored in the second bank, since if the hardware does not support the second bank of hot cues then the loops may still be constructed live using the dedicated loop buttons.
+The best use of hot cues and colour assignments in my workflow is still to be decided, so for now hot cues should be left unassigned.
 
 ## Gating
 
 The setting "During pause, GATE playback is applied to hot cues" does not apply to CDJs, only to Rekordbox. The setting should be left off, to avoid confusion.
-
-## Colours
-
-Hot cues can be assigned colours, which should be categorised as follows:
-
-* **Green:** General-purpose hot cue.
-* **Yellow:** Hot cue where vocals begin after the runway. This does not apply if the vocals are already present in the runway.
-* **Orange:** Inactive loop aligned to the beginning of a phrase.
-* **Turquoise:** Inactive loop not aligned to the beginning of a phrase.
-
-Think of green representing percussion, blue representing no percussion, and red representing vocals. Adding red to green in RGB space gives yellow, and adding it to blue gives pink.
-
-## TODO
-
-* Re-evaluate the hot cue approach - it didn't seem very easy to actually use on the CDJs. It may be better to simply do the memory cueing in Rekordbox, and the hot cueing on the CDJs themselves, so that the hot cues are set according to what is actually convenient when mixing.
 
 # Energy Levels
 
