@@ -75,17 +75,28 @@ def prunePathsOutsideRoot(root:str, paths:list):
 def fileTypeIsSupported(path:str):
 	return os.path.splitext(path)[1] in validation.ALL_MEDIA_FORMATS and not os.path.basename(path).startswith(".")
 
+def getExcludedFiles(dirPath:str):
+	if os.path.isfile(dirPath):
+		return []
+
+	try:
+		with open(os.path.join(dirPath, ".exclude"), "r") as inFile:
+			return [line.strip() for line in inFile.readlines()]
+	except Exception:
+		return []
+
 def findFilesInDirectory(absPath:str):
 	if os.path.isfile(absPath):
 		return [absPath]
 
+	excludedFiles = getExcludedFiles(absPath)
 	outFiles = []
 
 	if os.path.isdir(absPath):
 		for contents in os.listdir(absPath):
 			fullPath = os.path.join(absPath, contents)
 
-			if os.path.isfile(fullPath) and fileTypeIsSupported(contents):
+			if os.path.isfile(fullPath) and fileTypeIsSupported(contents) and contents not in excludedFiles:
 				outFiles.append(fullPath)
 
 	return outFiles
@@ -98,8 +109,10 @@ def findFilesResursively(absPath: str):
 
 	if os.path.isdir(absPath):
 		for root, dirs, files in os.walk(absPath):
+			excludedFiles = getExcludedFiles(root)
+
 			for file in files:
-				if fileTypeIsSupported(file):
+				if fileTypeIsSupported(file) and file not in excludedFiles:
 					outFiles.append(os.path.join(root, file))
 
 	return outFiles
@@ -167,10 +180,25 @@ def transcodeFile(args, configFile:config.Config, sourcePath:str, destPath:str) 
 			result.setTransferError(TRANSFER_ERROR_DEST_FILE_EXISTED)
 			return result
 
+	validationErrors = []
+
 	if args.commit:
 		try:
 			os.makedirs(os.path.dirname(destPath), exist_ok=True)
 			transcodeResult = ffmpeg.to320kMP3(configFile, sourcePath, destPath)
+
+			try:
+				# Re-validate the MP3 to check that it has the required ID3 tags.
+				# It's easier to do this than to write separate tag validation
+				# for the different file formats we may encounter before transcoding.
+				validationErrors = validation.validateFile(destPath)
+			except Exception:
+				os.unlink(destPath)
+				raise
+
+			if validationErrors:
+					# Don't leave the MP3 lying around.
+					os.unlink(destPath)
 		except Exception as ex:
 			result.setTransferError(TRANSFER_ERROR_TRANSCODING_FAILED)
 			result.setTransferErrorReason(str(ex))
@@ -182,6 +210,11 @@ def transcodeFile(args, configFile:config.Config, sourcePath:str, destPath:str) 
 			return result
 
 	result.setReplacedTargetFile(existed)
+
+	if validationErrors:
+		result.setTransferError(TRANSFER_ERROR_VALIDATION_FAILED_POST_TRANSACODE)
+		result.setTransferErrorReason("; ".join(validationErrors))
+
 	return result
 
 def processFile(args, configFile:config.Config, sourcePath:str, destPath:str) -> TransferResult:

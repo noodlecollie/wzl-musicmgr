@@ -28,6 +28,7 @@ UNSUPPORTED_FORMAT = "Unsupported file format"
 OVER_TEN_MINUTES_LONG = "Over 10 minutes long"
 MP3_LESS_THAN_320K = "MP3 bitrate less than 320k"
 MISSING_BASIC_METADATA = "Missing basic metadata"
+INVALID_METADATA_CHARACTERS = "Invalid metadata characters"
 INVALID_DATA = "File data was not valid"
 UNEXPECTED_ERROR = "Unexpected error during validation"
 
@@ -37,10 +38,16 @@ BASIC_METADATA_FRAMES = {
 	"TIT2": "Track title"
 }
 
-def __fileIsMissingBasicTags(filePath:str) -> list:
-	tags = set(id3.dump_tag_string_dict(filePath).keys())
+def __fileIsMissingBasicTags(tags:dict) -> bool:
 	minTags = set(BASIC_METADATA_FRAMES.keys())
-	return bool(set(minTags - tags))
+	return bool(set(minTags - set(tags)))
+
+def __anyTagsHaveNonPrintableCharacters(tags:dict):
+	for key in BASIC_METADATA_FRAMES.keys():
+		if key in tags and not tags[key].isprintable():
+			return True
+
+	return False
 
 def __performChecksOnFileContents(filePath:str, extension:str) -> list:
 	validationErrors = []
@@ -53,8 +60,14 @@ def __performChecksOnFileContents(filePath:str, extension:str) -> list:
 		if mp3.MP3(filePath).info.bitrate < 320000:
 			validationErrors.append(MP3_LESS_THAN_320K)
 
-		if __fileIsMissingBasicTags(filePath):
+		# TODO: Do this for all supported files, not just MP3s?
+		tagDict = id3.dump_tag_string_dict(filePath)
+
+		if __fileIsMissingBasicTags(tagDict):
 			validationErrors.append(MISSING_BASIC_METADATA)
+
+		if __anyTagsHaveNonPrintableCharacters(tagDict):
+			validationErrors.append(INVALID_METADATA_CHARACTERS)
 
 	return validationErrors
 
