@@ -4,6 +4,8 @@ except ModuleNotFoundError:
 	print("Mutagen was not found - run `python3 -m pip install mutagen`")
 	raise
 
+FRAME_TRACK_TITLE = "TIT2"
+
 def dump_tag_string_dict(filePath:str) -> dict:
 	file = id3.ID3(filePath)
 

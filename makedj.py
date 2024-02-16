@@ -1,8 +1,15 @@
 import argparse
 import os
 import shutil
-from lib import config, validation, utils, ffmpeg
+import traceback
+from lib import config, validation, utils, ffmpeg, id3
 from lib.transfer_result import *
+
+try:
+	import mutagen.id3 as mutID3
+except ModuleNotFoundError:
+	print("Mutagen was not found - run `python3 -m pip install mutagen`")
+	raise
 
 SCRIPT_DIR = os.path.realpath(os.path.dirname(__file__))
 
@@ -75,6 +82,9 @@ def prunePathsOutsideRoot(root:str, paths:list):
 def fileTypeIsSupported(path:str):
 	return os.path.splitext(path)[1] in validation.ALL_MEDIA_FORMATS and not os.path.basename(path).startswith(".")
 
+def fileIsDraft(configFile:config.Config, path:str):
+	return utils.isChildPath(configFile.getDraftDirPath(), path)
+
 def getExcludedFiles(dirPath:str):
 	if os.path.isfile(dirPath):
 		return []
@@ -136,7 +146,29 @@ def buildTargetFileList(root:str, paths:list, recursive:bool):
 
 	return list(filePaths.keys())
 
-def transferFile(args, sourcePath:str, destPath:str) -> TransferResult:
+def validateFile(configFile:config.Config, path:str, sourcePath:str=None):
+	validationErrors = validation.validateFile(path)
+
+	if fileIsDraft(configFile, sourcePath if sourcePath is not None else path):
+		# File is a draft, so it can be without metadata.
+		validationErrors.remove(validation.MISSING_BASIC_METADATA)
+
+	return validationErrors
+
+def performPostTransferFixups(configFile:config.Config, sourcePath:str, destPath:str):
+	if fileIsDraft(configFile, sourcePath):
+		id3tags = mutID3.ID3(destPath)
+
+		if id3.FRAME_TRACK_TITLE in id3tags:
+			title = id3tags[id3.FRAME_TRACK_TITLE]
+		else:
+			title = os.path.splitext(os.path.basename(sourcePath))[0]
+
+		id3tags.delall(id3.FRAME_TRACK_TITLE)
+		id3tags.add(mutID3.TIT2(encoding=3, text=f"DRAFT {title}"))
+		id3tags.save()
+
+def transferFile(args, configFile, sourcePath:str, destPath:str) -> TransferResult:
 	result = TransferResult(TRANSFER_TYPE_COPY, sourcePath, destPath)
 	result.setTransferError(TRANSFER_ERROR_NONE)
 
@@ -159,9 +191,10 @@ def transferFile(args, sourcePath:str, destPath:str) -> TransferResult:
 		if args.commit:
 			os.makedirs(os.path.dirname(destPath), exist_ok=True)
 			shutil.copy(sourcePath, destPath)
-	except Exception as ex:
+			performPostTransferFixups(configFile, sourcePath, destPath)
+	except Exception:
 		result.setTransferError(TRANSFER_ERROR_UNHANDLED)
-		result.setTransferErrorReason(str(ex))
+		result.setTransferErrorReason(traceback.format_exc())
 
 	result.setReplacedTargetFile(existed)
 	return result
@@ -186,12 +219,13 @@ def transcodeFile(args, configFile:config.Config, sourcePath:str, destPath:str) 
 		try:
 			os.makedirs(os.path.dirname(destPath), exist_ok=True)
 			transcodeResult = ffmpeg.to320kMP3(configFile, sourcePath, destPath)
+			performPostTransferFixups(configFile, sourcePath, destPath)
 
 			try:
 				# Re-validate the MP3 to check that it has the required ID3 tags.
 				# It's easier to do this than to write separate tag validation
 				# for the different file formats we may encounter before transcoding.
-				validationErrors = validation.validateFile(destPath)
+				validationErrors = validateFile(configFile, destPath, sourcePath)
 			except Exception:
 				os.unlink(destPath)
 				raise
@@ -221,18 +255,18 @@ def processFile(args, configFile:config.Config, sourcePath:str, destPath:str) ->
 	result = TransferResult(TRANSFER_TYPE_UNKNOWN, sourcePath, destPath)
 
 	try:
-		validationErrors = validation.validateFile(sourcePath)
+		validationErrors = validateFile(configFile, sourcePath)
 
 		if not validationErrors:
-			result = transferFile(args, sourcePath, destPath)
+			result = transferFile(args, configFile, sourcePath, destPath)
 		elif validationErrors == [validation.NOT_AN_MP3]:
 			result = transcodeFile(args, configFile, sourcePath, os.path.splitext(destPath)[0] + ".mp3")
 		else:
 			result.setTransferError(TRANSFER_ERROR_VALIDATION_FAILED)
 			result.setTransferErrorReason("; ".join(validationErrors))
-	except Exception as ex:
+	except Exception:
 		result.setTransferError(TRANSFER_ERROR_UNHANDLED)
-		result.setTransferErrorReason(f"An exception was encountered: {ex}")
+		result.setTransferErrorReason(f"An exception was encountered: {traceback.format_exc()}")
 
 	return result
 
@@ -269,7 +303,8 @@ def printUnsuccessfulResult(result:TransferResult):
 	reason = result.getTransferErrorReason()
 
 	if reason:
-		print(f"      {reason}")
+		indentedReason = utils.indentLines(reason, "  ")
+		print(f"    {indentedReason}")
 
 def printResults(title:str, results:dict):
 	print(f"{title}:")
@@ -307,9 +342,20 @@ def main():
 
 	for file in filesInInputRoot:
 		sourcePath = os.path.join(args.input_root, file)
-		destPath = os.path.join(args.output_root, file)
+
+		if fileIsDraft(configFile, sourcePath):
+			destPath = os.path.join(args.output_root, "_Draft", file)
+		else:
+			destPath = os.path.join(args.output_root, file)
+
 		result = processFile(args, configFile, sourcePath, destPath)
 		addToResults(successfulTransfers, failedTransfers, result)
+
+	if not args.commit:
+		print("####################################################################")
+		print("# Dry run, no operations performed. Prospective results are below. #")
+		print("####################################################################")
+		print()
 
 	printResults("Successful", successfulTransfers)
 	printResults("Failed", failedTransfers)
