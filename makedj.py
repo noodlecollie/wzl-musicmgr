@@ -145,8 +145,13 @@ def validateFile(configFile:config.Config, path:str, sourcePath:str=None):
 	validationErrors = validation.validateFile(path)
 
 	if fileIsDraft(configFile, sourcePath if sourcePath is not None else path):
-		# File is a draft, so it can be without metadata.
-		validationErrors.remove(validation.MISSING_BASIC_METADATA)
+		# File is a draft, so restrictions are more lax.
+		restrictionsToRemove = set([
+			validation.MISSING_BASIC_METADATA,
+			validation.MP3_LESS_THAN_320K
+		])
+
+		validationErrors = list(set(validationErrors) - restrictionsToRemove)
 
 	return validationErrors
 
@@ -208,12 +213,13 @@ def transcodeFile(args, configFile:config.Config, sourcePath:str, destPath:str) 
 			result.setTransferError(TRANSFER_ERROR_DEST_FILE_EXISTED)
 			return result
 
+	isDraft = fileIsDraft(configFile, sourcePath)
 	validationErrors = []
 
 	if args.commit:
 		try:
 			os.makedirs(os.path.dirname(destPath), exist_ok=True)
-			transcodeResult = ffmpeg.to320kMP3(configFile, sourcePath, destPath)
+			transcodeResult = ffmpeg.toMP3(configFile, sourcePath, destPath, quality=258 if isDraft else 320)
 			performPostTransferFixups(configFile, sourcePath, destPath)
 
 			try:
