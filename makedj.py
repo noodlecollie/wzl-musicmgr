@@ -222,12 +222,12 @@ def transcodeFile(args, configFile:config.Config, sourcePath:str, destPath:str) 
 				# for the different file formats we may encounter before transcoding.
 				validationErrors = validateFile(configFile, destPath, sourcePath)
 			except Exception:
-				os.unlink(destPath)
+				utils.removeFileAndEmptyParentDirs(destPath, args.output_root)
 				raise
 
 			if validationErrors:
 					# Don't leave the MP3 lying around.
-					os.unlink(destPath)
+					utils.removeFileAndEmptyParentDirs(destPath, args.output_root)
 		except Exception as ex:
 			result.setTransferError(TRANSFER_ERROR_TRANSCODING_FAILED)
 			result.setTransferErrorReason(str(ex))

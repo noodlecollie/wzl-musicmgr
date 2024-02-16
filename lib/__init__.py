@@ -11,4 +11,3 @@ def __ensureInstalled(pkg:str, minVersion:str):
 		raise
 
 __ensureInstalled("mutagen", "1.47.0")
-__ensureInstalled("python-ffmpeg", "2.0.10")
