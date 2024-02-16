@@ -1,8 +1,4 @@
-try:
-	import mutagen.id3 as id3
-except ModuleNotFoundError:
-	print("Mutagen was not found - run `python3 -m pip install mutagen`")
-	raise
+import mutagen.id3 as id3
 
 FRAME_TRACK_TITLE = "TIT2"
 

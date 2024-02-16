@@ -4,12 +4,7 @@ import shutil
 import traceback
 from lib import config, validation, utils, ffmpeg, id3
 from lib.transfer_result import *
-
-try:
-	import mutagen.id3 as mutID3
-except ModuleNotFoundError:
-	print("Mutagen was not found - run `python3 -m pip install mutagen`")
-	raise
+from mutagen import id3 as mutID3
 
 SCRIPT_DIR = os.path.realpath(os.path.dirname(__file__))
 

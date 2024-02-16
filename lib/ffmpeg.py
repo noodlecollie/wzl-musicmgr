@@ -1,6 +1,7 @@
 import subprocess
 from . import config
 
+# TODO: Upgrade this to use the python-ffmpeg package
 def runFFMPEG(configFile:config.Config, args:list):
 	ffmpeg = configFile.getFFMPEGOverridePath()
 	useShell = not ffmpeg

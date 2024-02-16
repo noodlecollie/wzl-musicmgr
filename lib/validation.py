@@ -1,11 +1,6 @@
 import os
 from . import id3
-
-try:
-	from mutagen import id3 as mutID3, mp3, File
-except ModuleNotFoundError:
-	print("Mutagen was not found - run `python3 -m pip install mutagen`")
-	raise
+from mutagen import id3 as mutID3, mp3, File
 
 MEDIA_FORMAT_LOSSLESS = [
 	".flac",
