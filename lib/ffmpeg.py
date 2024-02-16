@@ -1,13 +1,10 @@
 import subprocess
 from . import config
 
-# TODO: Upgrade this to use the python-ffmpeg package
 def runFFMPEG(configFile:config.Config, args:list):
 	ffmpeg = configFile.getFFMPEGOverridePath()
-	useShell = not ffmpeg
-
-	args = ["ffmpeg" if useShell else ffmpeg] + args
-	return subprocess.run(args, shell=useShell)
+	args = [ffmpeg if ffmpeg else "ffmpeg"] + args
+	return subprocess.run(args, shell=False)
 
 def toMP3(configFile:config.Config, inputFile:str, outputFile:str, quality:int=320):
 	return runFFMPEG(configFile, [

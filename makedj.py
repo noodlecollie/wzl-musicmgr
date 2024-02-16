@@ -25,6 +25,7 @@ def parseArgs():
 		"--input-root",
 		help="Root directory for input files. Defaults to the configured Personal directory."
 	)
+
 	parser.add_argument(
 		"-o",
 		"--output-root",
@@ -76,9 +77,6 @@ def prunePathsOutsideRoot(root:str, paths:list):
 
 def fileTypeIsSupported(path:str):
 	return os.path.splitext(path)[1] in validation.ALL_MEDIA_FORMATS and not os.path.basename(path).startswith(".")
-
-def fileIsDraft(configFile:config.Config, path:str):
-	return utils.isChildPath(configFile.getDraftDirPath(), path)
 
 def getExcludedFiles(dirPath:str):
 	if os.path.isfile(dirPath):
@@ -144,7 +142,7 @@ def buildTargetFileList(root:str, paths:list, recursive:bool):
 def validateFile(configFile:config.Config, path:str, sourcePath:str=None):
 	validationErrors = validation.validateFile(path)
 
-	if fileIsDraft(configFile, sourcePath if sourcePath is not None else path):
+	if utils.fileIsDraft(configFile, sourcePath if sourcePath is not None else path):
 		# File is a draft, so restrictions are more lax.
 		restrictionsToRemove = set([
 			validation.MISSING_BASIC_METADATA,
@@ -156,7 +154,7 @@ def validateFile(configFile:config.Config, path:str, sourcePath:str=None):
 	return validationErrors
 
 def performPostTransferFixups(configFile:config.Config, sourcePath:str, destPath:str):
-	if fileIsDraft(configFile, sourcePath):
+	if utils.fileIsDraft(configFile, sourcePath):
 		id3tags = mutID3.ID3(destPath)
 
 		if id3.FRAME_TRACK_TITLE in id3tags:
@@ -213,13 +211,13 @@ def transcodeFile(args, configFile:config.Config, sourcePath:str, destPath:str) 
 			result.setTransferError(TRANSFER_ERROR_DEST_FILE_EXISTED)
 			return result
 
-	isDraft = fileIsDraft(configFile, sourcePath)
 	validationErrors = []
 
 	if args.commit:
 		try:
 			os.makedirs(os.path.dirname(destPath), exist_ok=True)
-			transcodeResult = ffmpeg.toMP3(configFile, sourcePath, destPath, quality=258 if isDraft else 320)
+			quality = utils.MP3_QUALITY_DRAFT if utils.fileIsDraft(configFile, sourcePath) else utils.MP3_QUALITY_STD
+			transcodeResult = ffmpeg.toMP3(configFile, sourcePath, destPath, quality)
 			performPostTransferFixups(configFile, sourcePath, destPath)
 
 			try:
@@ -353,7 +351,7 @@ def main():
 	for file in filesInInputRoot:
 		sourcePath = os.path.join(args.input_root, file)
 
-		if fileIsDraft(configFile, sourcePath):
+		if utils.fileIsDraft(configFile, sourcePath):
 			destPath = os.path.join(args.output_root, "_Draft", file)
 		else:
 			destPath = os.path.join(args.output_root, file)

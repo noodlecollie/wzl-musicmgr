@@ -8,6 +8,7 @@ class Config:
 		self.__djDir:str = ""
 		self.__draftDir:str = ""
 		self.__ffmpeg = None
+		self.__ytdlp = None
 
 		self.__loadJSON(configFilePath)
 
@@ -35,6 +36,9 @@ class Config:
 	def getFFMPEGOverridePath(self):
 		return self.__ffmpeg
 
+	def getYTDLPOverridePath(self):
+		return self.__ytdlp
+
 	def __makePath(self, path:str):
 		return path if os.path.isabs(path) else os.path.join(self.getBaseDirPath(), path)
 
@@ -46,6 +50,7 @@ class Config:
 			self.__djDir = self.__tryRead(contents, "dj", str)
 			self.__draftDir = self.__tryRead(contents, "draft", str)
 			self.__ffmpeg = self.__tryRead(contents, "ffmpeg", str, optional=True)
+			self.__ytdlp = self.__tryRead(contents, "yt-dlp", str, optional=True)
 
 	def __tryRead(self, jsonObj:dict, prop:str, valueType:type, optional:bool=False):
 		if prop not in jsonObj:

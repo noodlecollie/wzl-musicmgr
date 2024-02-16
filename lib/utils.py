@@ -1,4 +1,8 @@
 import os
+from . import config
+
+MP3_QUALITY_STD = 320
+MP3_QUALITY_DRAFT = 258
 
 def isChildPath(parent:str, child:str) -> bool:
 	try:
@@ -30,3 +34,6 @@ def removeFileAndEmptyParentDirs(path:str, limit=None):
 
 		os.rmdir(path)
 		path = os.path.dirname(path)
+
+def fileIsDraft(configFile:config.Config, path:str):
+	return isChildPath(configFile.getDraftDirPath(), path)
