@@ -228,6 +228,15 @@ def transcodeFile(args, configFile:config.Config, sourcePath:str, destPath:str) 
 			if validationErrors:
 					# Don't leave the MP3 lying around.
 					utils.removeFileAndEmptyParentDirs(destPath, args.output_root)
+		except FileNotFoundError:
+			result.setTransferError(TRANSFER_ERROR_TRANSCODING_FAILED)
+
+			result.setTransferErrorReason(
+				"Failed to invoke ffmpeg - check the executable is present in the system "
+				"path, or set an \"ffmpeg\" override path in config.json"
+			)
+
+			return result
 		except Exception as ex:
 			result.setTransferError(TRANSFER_ERROR_TRANSCODING_FAILED)
 			result.setTransferErrorReason(str(ex))
