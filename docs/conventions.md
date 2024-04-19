@@ -16,6 +16,15 @@ CDJ memory cues should be used to indicate potential "mix crossover points" - wh
 
 Memory cues earlier in a track will usually be used as "mix in" points for that track. Memory cues later in the track will usually be used as "mix out" points. A countdown of the number of bars to the next memory cue can be shown alongside the waveform, to assess how much of the track is left until a crossover should occur.
 
+## Memory Cue Colours
+
+Memory cues can be assigned colours in Rekordbox by clicking the empty space to the left of their entry in the memory cue table. These colours are reflected on the CDJ screen.
+
+Memory cue colours should be assigned to indicate the following:
+
+* <span style="background-color: #ff0000">__</span> **Red:** Default. No specific meaning.
+* <span style="background-color: #fcb10f">__</span> **Orange:** The number of bars between this memory cue and the next is not nicely divisible into one or more phrases. Be careful when mixing in or out here, as the phrases will likely not line up.
+
 # Hot Cues
 
 The primary use of CDJ hot cues should be to indicate positions where a mix of a new track should begin. They should establish sections of "runway", usually one or two phrases, leading up to a memory cue.
