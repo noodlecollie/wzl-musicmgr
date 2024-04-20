@@ -52,6 +52,12 @@ def parseArgs():
 		help="If set, allows overwriting destination files when copying or transcoding."
 	)
 
+	parser.add_argument(
+		"--allow-low-bitrate",
+		action="store_true",
+		help="If set, allows copying MP3s with a bitrate < 320K."
+	)
+
 	return parser.parse_args()
 
 def loadConfig():
@@ -139,7 +145,7 @@ def buildTargetFileList(root:str, paths:list, recursive:bool):
 
 	return list(filePaths.keys())
 
-def validateFile(configFile:config.Config, path:str, sourcePath:str=None):
+def validateFile(args, configFile:config.Config, path:str, sourcePath:str=None):
 	validationErrors = validation.validateFile(path)
 
 	if utils.fileIsDraft(configFile, sourcePath if sourcePath is not None else path):
@@ -150,6 +156,9 @@ def validateFile(configFile:config.Config, path:str, sourcePath:str=None):
 		])
 
 		validationErrors = list(set(validationErrors) - restrictionsToRemove)
+
+	if args.allow_low_bitrate:
+		validationErrors = list(set(validationErrors) - set([validation.MP3_LESS_THAN_320K]))
 
 	return validationErrors
 
@@ -224,7 +233,7 @@ def transcodeFile(args, configFile:config.Config, sourcePath:str, destPath:str) 
 				# Re-validate the MP3 to check that it has the required ID3 tags.
 				# It's easier to do this than to write separate tag validation
 				# for the different file formats we may encounter before transcoding.
-				validationErrors = validateFile(configFile, destPath, sourcePath)
+				validationErrors = validateFile(args, configFile, destPath, sourcePath)
 			except Exception:
 				utils.removeFileAndEmptyParentDirs(destPath, args.output_root)
 				raise
@@ -263,7 +272,7 @@ def processFile(args, configFile:config.Config, sourcePath:str, destPath:str) ->
 	result = TransferResult(TRANSFER_TYPE_UNKNOWN, sourcePath, destPath)
 
 	try:
-		validationErrors = validateFile(configFile, sourcePath)
+		validationErrors = validateFile(args, configFile, sourcePath)
 
 		if not validationErrors:
 			result = transferFile(args, configFile, sourcePath, destPath)
