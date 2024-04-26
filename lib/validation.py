@@ -24,7 +24,7 @@ OVER_TEN_MINUTES_LONG = "Over 10 minutes long"
 MP3_LESS_THAN_320K = "MP3 bitrate less than 320k"
 MISSING_BASIC_METADATA = "Missing basic metadata"
 INVALID_METADATA_CHARACTERS = "Invalid metadata characters"
-INVALID_DATA = "File data was not valid"
+NO_ID3_TAGS = "Could not read ID3 tags"
 UNEXPECTED_ERROR = "Unexpected error during validation"
 
 BASIC_METADATA_FRAMES = {
@@ -92,7 +92,7 @@ def validateFile(filePath:str, logExceptions=True) -> list:
 		validationErrors += __performChecksOnFileContents(filePath, extension)
 
 	except mutID3.ID3NoHeaderError:
-		validationErrors.append(INVALID_DATA)
+		validationErrors.append(NO_ID3_TAGS)
 	except Exception as ex:
 		if logExceptions:
 			print(f'validate_file(): Unexpected exception when validating "{filePath}": {ex}')
