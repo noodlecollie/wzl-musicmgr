@@ -25,6 +25,7 @@ Memory cue colours should be assigned to indicate the following:
 * <span style="background-color: #ff0000">__</span> **Red:** Default. No specific meaning.
 * <span style="background-color: #fcb10f">__</span> **Orange:** The number of bars between this memory cue and the next is not nicely divisible into one or more phrases. Be careful when mixing in or out here, as the phrases will likely not line up.
 * <span style="background-color: #ff32e3">__</span> **Pink:** Drop, where big energy change is introduced.
+* <span style="background-color: #ff32e3">__</span> **Purple:** Equivalent of pink and orange combined: drop where the next memory cue is not on a phrase boundary.
 
 # Hot Cues
 
