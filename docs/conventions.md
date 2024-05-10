@@ -35,9 +35,11 @@ Consequently, hot cues should *not* usually be placed on a boundary between two 
 
 ## Hot Cue Banks
 
-Older CDJ controllers may only have three hot cue buttons available; therefore, the first three hot cues should always be reserved for the three most appropriate sections of runway in a track.
+Older CDJ controllers may only have three hot cue buttons available; therefore, the first three hot cues should always be reserved for the three most appropriate sections of runway in a track:
 
-The best use of hot cues and colour assignments in my workflow is still to be decided, so for now hot cues should be left unassigned.
+* **A:** One phrase before the main drop. Useful for mixing tracks with no breakdown in-between.
+* **B:** One phrase before the build-up to the main drop. Useful for mixing tracks where the breakdown of the outgoing track meshes with the build-up of the incoming track.
+* **C:** TBD.
 
 ## Gating
 
