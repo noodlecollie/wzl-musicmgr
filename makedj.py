@@ -58,6 +58,12 @@ def parseArgs():
 		help="If set, allows copying MP3s with a bitrate < 320K."
 	)
 
+	parser.add_argument(
+		"--allow-missing-metadata",
+		action="store_true",
+		help="If set, allows copying/transcoding MP3s with missing metadata."
+	)
+
 	return parser.parse_args()
 
 def loadConfig():
@@ -159,6 +165,9 @@ def validateFile(args, configFile:config.Config, path:str, sourcePath:str=None):
 
 	if args.allow_low_bitrate:
 		validationErrors = list(set(validationErrors) - set([validation.MP3_LESS_THAN_320K]))
+
+	if args.allow_missing_metadata:
+		validationErrors = list(set(validationErrors) - set([validation.MISSING_BASIC_METADATA]))
 
 	return validationErrors
 
