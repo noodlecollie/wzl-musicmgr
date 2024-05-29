@@ -25,7 +25,7 @@ Memory cue colours should be assigned to indicate the following:
 * <span style="background-color: #ff0000">__</span> **Red:** Default. No specific meaning.
 * <span style="background-color: #fcb10f">__</span> **Orange:** The number of bars between this memory cue and the next is not nicely divisible into one or more phrases. Be careful when mixing in or out here, as the phrases will likely not line up.
 * <span style="background-color: #ff32e3">__</span> **Pink:** Drop, where big energy change is introduced.
-* <span style="background-color: #ff32e3">__</span> **Purple:** Equivalent of pink and orange combined: drop where the next memory cue is not on a phrase boundary.
+* <span style="background-color: #bc38ff">__</span> **Purple:** Equivalent of pink and orange combined: drop where the next memory cue is not on a phrase boundary.
 
 # Hot Cues
 
@@ -40,6 +40,13 @@ Older CDJ controllers may only have three hot cue buttons available; therefore, 
 * **A:** One phrase before the main drop. Useful for mixing tracks with no breakdown in-between.
 * **B:** One phrase before the build-up to the main drop. Useful for mixing tracks where the breakdown of the outgoing track meshes with the build-up of the incoming track.
 * **C:** TBD.
+
+## Hot Cue Colours
+
+* <span style="background-color: #00ff00">__</span> **Green:** Default. No specific meaning.
+* <span style="background-color: #2b32ff">__</span> **Blue:** The usual mix-in point for this hot cue is preceded by some kind of grace period, in addition to the usual runway. This could mean, for example, that there is a 16-beat mini-breakdown before a drop; although the hot cue is still assigned notionally to the drop, the mix-in process will need to take this extra feature of the track into account.
+* <span style="background-color: #26c5ff">__</span> **Turquoise:** This hot cue does not have the usual phrase's worth of runway before its mix-in point. Be careful when mixing here, as there is not as much prep time as usual.
+* <span style="background-color: #bc38ff">__</span> **Purple:** This hot cue marks a specific point in a track that may be jumped to directly, eg. a drop. It should not be used for mixing in under normal circumstances, as it does not provide any runway.
 
 ## Gating
 
