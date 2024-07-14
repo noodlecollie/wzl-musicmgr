@@ -145,12 +145,14 @@ def findFilesResursively(absPath: str):
 
 def buildTargetFileList(root:str, paths:list, recursive:bool):
 	filePaths = {}
+	ignoredPaths = {}
 
 	for path in paths:
 		absPath = path if os.path.isabs(path) else os.path.abspath(os.path.join(root, path))
 
 		if not os.path.isfile(absPath) and not os.path.isdir(absPath):
-			print(f"Ignoring {path} which does not correspond to a file or directory.")
+			ignoredPaths[absPath] = True
+			continue
 
 		if recursive:
 			resolvedPaths = findFilesResursively(absPath)
@@ -160,7 +162,7 @@ def buildTargetFileList(root:str, paths:list, recursive:bool):
 		for resolvedPath in resolvedPaths:
 			filePaths[os.path.relpath(resolvedPath, root)] = True
 
-	return list(filePaths.keys())
+	return (list(filePaths.keys()), list(ignoredPaths.keys()))
 
 def validateFile(args, configFile:config.Config, path:str, sourcePath:str=None):
 	validationErrors = validation.validateFile(path)
@@ -377,10 +379,13 @@ def main():
 
 	listFiles = utils.convertRelativePathsToAbsolute(args.input_root, args.listfile)
 	paths = prunePathsOutsideRoot(args.input_root, args.files + utils.parseAllLinesFromFiles(listFiles))
-	filesInInputRoot = buildTargetFileList(args.input_root, paths, args.recursive)
+	filesInInputRoot, ignoredFiles = buildTargetFileList(args.input_root, paths, args.recursive)
 
 	successfulTransfers = {}
 	failedTransfers = {}
+
+	for file in ignoredFiles:
+		addToResults(successfulTransfers, failedTransfers, TransferResult(TRANSFER_TYPE_UNKNOWN, file, "", TRANSFER_ERROR_INVALID_SOURCE))
 
 	for file in filesInInputRoot:
 		sourcePath = os.path.join(args.input_root, file)

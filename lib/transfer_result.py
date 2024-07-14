@@ -6,17 +6,18 @@ TRANSFER_ERROR_NONE = "No error"
 TRANSFER_ERROR_UNHANDLED = "Unhandled error"
 TRANSFER_ERROR_NOT_STARTED = "Not yet transferred"
 TRANSFER_ERROR_TRANSCODING_FAILED = "Transcoding failed"
+TRANSFER_ERROR_INVALID_SOURCE = "Invalid source"
 TRANSFER_ERROR_INVALID_DESTINATION = "Invalid destination"
 TRANSFER_ERROR_VALIDATION_FAILED = "Validation failed"
 TRANSFER_ERROR_VALIDATION_FAILED_POST_TRANSACODE = "Validation failed after transcoding"
 TRANSFER_ERROR_DEST_FILE_EXISTED = "Destination file already existed"
 
 class TransferResult():
-	def __init__(self, transferType:str, sourcePath:str, destPath:str):
+	def __init__(self, transferType:str, sourcePath:str, destPath:str, transferError:str=TRANSFER_ERROR_NOT_STARTED):
 		self.__sourcePath = sourcePath
 		self.__destPath = destPath
 		self.__transferType = transferType
-		self.__transferError = TRANSFER_ERROR_NOT_STARTED
+		self.__transferError = transferError
 		self.__transferErrorReason = ""
 		self.__replacedTargetFile = False
 
