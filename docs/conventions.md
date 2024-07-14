@@ -47,6 +47,7 @@ Older CDJ controllers may only have three hot cue buttons available; therefore, 
 * <span style="background-color: #2b32ff">__</span> **Blue:** The usual mix-in point for this hot cue is preceded by some kind of grace period, in addition to the usual runway. This could mean, for example, that there is a 16-beat mini-breakdown before a drop; although the hot cue is still assigned notionally to the drop, the mix-in process will need to take this extra feature of the track into account.
 * <span style="background-color: #26c5ff">__</span> **Turquoise:** This hot cue does not have the usual phrase's worth of runway before its mix-in point. Be careful when mixing here, as there is not as much prep time as usual.
 * <span style="background-color: #bc38ff">__</span> **Purple:** This hot cue marks a specific point in a track that may be jumped to directly, eg. a drop. It should not be used for mixing in under normal circumstances, as it does not provide any runway.
+* <span style="background-color: #ff32e3">__</span> **Pink:** This hot cue is used for a specific set, and does not follow any of the above rules. Its function relates only to the set in question. The hot cue should not be considered permanent.
 
 ## Gating
 
