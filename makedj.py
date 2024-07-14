@@ -2,6 +2,7 @@ import argparse
 import os
 import shutil
 import traceback
+import sys
 from lib import config, validation, utils, ffmpeg, id3
 from lib.transfer_result import *
 from mutagen import id3 as mutID3
@@ -16,8 +17,18 @@ def parseArgs():
 
 	parser.add_argument(
 		"files",
-		nargs="+",
+		nargs="*",
 		help="Files or folders to convert."
+	)
+
+	parser.add_argument(
+		"-l",
+		"--listfile",
+		action="append",
+		help="A text file to parse. This option can be specified multiple times. "
+		"If the text file path is not absolute, it is treated as being relative to the input root. "
+		"Each non-empty line in the text file is treated as a file or folder path, as "
+		"if it had been passed on the command line invocation to this script."
 	)
 
 	parser.add_argument(
@@ -354,13 +365,18 @@ def main():
 	args = parseArgs()
 	configFile = loadConfig()
 
+	if not args.files and not args.listfile:
+		print("No files or list files were provided.", file=sys.stderr)
+		sys.exit(1)
+
 	if not args.input_root:
 		args.input_root = configFile.getPersonalDirPath()
 
 	if not args.output_root:
 		args.output_root = configFile.getDJDirPath()
 
-	paths = prunePathsOutsideRoot(args.input_root, args.files)
+	listFiles = utils.convertRelativePathsToAbsolute(args.input_root, args.listfile)
+	paths = prunePathsOutsideRoot(args.input_root, args.files + utils.parseAllLinesFromFiles(listFiles))
 	filesInInputRoot = buildTargetFileList(args.input_root, paths, args.recursive)
 
 	successfulTransfers = {}

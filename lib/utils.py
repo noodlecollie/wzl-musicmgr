@@ -37,3 +37,21 @@ def removeFileAndEmptyParentDirs(path:str, limit=None):
 
 def fileIsDraft(configFile:config.Config, path:str):
 	return isChildPath(configFile.getDraftDirPath(), path)
+
+def parseAllLinesFromFiles(files:list):
+	outLines = []
+
+	for path in files:
+		with open(path) as inFile:
+			for line in inFile.readlines():
+				line = line.strip()
+
+				if not line:
+					continue
+
+				outLines.append(line)
+
+	return outLines
+
+def convertRelativePathsToAbsolute(root:str, paths:list):
+	return [(os.path.abspath(os.path.join(root, path)) if not os.path.isabs(path) else path) for path in paths]
