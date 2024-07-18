@@ -377,7 +377,7 @@ def main():
 	if not args.output_root:
 		args.output_root = configFile.getDJDirPath()
 
-	listFiles = utils.convertRelativePathsToAbsolute(args.input_root, args.listfile)
+	listFiles = utils.convertRelativePathsToAbsolute(args.input_root, args.listfile if args.listfile else [])
 	paths = prunePathsOutsideRoot(args.input_root, args.files + utils.parseAllLinesFromFiles(listFiles))
 	filesInInputRoot, ignoredFiles = buildTargetFileList(args.input_root, paths, args.recursive)
 
