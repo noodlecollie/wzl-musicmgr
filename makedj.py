@@ -408,10 +408,10 @@ def main():
 	printResults("Failed", failedTransfers)
 
 	if not args.commit:
+		print()
 		print("####################################################################")
 		print("# Dry run, no operations performed. Prospective results are above. #")
 		print("####################################################################")
-		print()
 
 if __name__ != "__main__":
 	raise RuntimeError("Expected file to be run as a script")
