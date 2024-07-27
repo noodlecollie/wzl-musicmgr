@@ -5,7 +5,7 @@ from . import config
 RE_VIDEO_ID_ONLY = re.compile(r"^\w+$", re.ASCII)
 RE_STANDARD_YOUTUBE_URL = re.compile(r"^(https://|www\.|https://www\.)youtube\.com/watch\?v=", re.ASCII)
 RE_YOUTU_BE_SHORT_URL = re.compile(r"^(https://)?youtu\.be/", re.ASCII)
-RE_VIDEO_ID_SEGMENT = re.compile(r"(\w+)(&|$)", re.ASCII)
+RE_VIDEO_ID_SEGMENT = re.compile(r"([\w-]+)(&|$)", re.ASCII)
 
 RE_AUDIO_NAME_FROM_TRANSCODE = re.compile(r"^\[ExtractAudio\] Destination: (.+)$", re.MULTILINE)
 RE_FILE_EXISTED = re.compile(r"^\[ExtractAudio\] Not converting audio (.+); file is already in target format", re.MULTILINE)
