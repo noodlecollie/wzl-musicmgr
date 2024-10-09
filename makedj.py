@@ -75,6 +75,12 @@ def parseArgs():
 		help="If set, allows copying/transcoding MP3s with missing metadata."
 	)
 
+	parser.add_argument(
+		"--allow-long-duration",
+		action="store_true",
+		help="If set, allows copying/transcoding MP3s with a length over 10 minutes."
+	)
+
 	return parser.parse_args()
 
 def loadConfig():
@@ -181,6 +187,9 @@ def validateFile(args, configFile:config.Config, path:str, sourcePath:str=None):
 
 	if args.allow_missing_metadata:
 		validationErrors = list(set(validationErrors) - set([validation.MISSING_BASIC_METADATA]))
+
+	if args.allow_long_duration:
+		validationErrors = list(set(validationErrors) - set([validation.OVER_TEN_MINUTES_LONG]))
 
 	return validationErrors
 
