@@ -86,11 +86,11 @@ def parseArgs():
 def loadConfig():
 	return config.Config(os.path.join(SCRIPT_DIR, "config.json"))
 
-def prunePathsOutsideRoot(root:str, paths:list):
+def prunePathsOutsideRoot(configFile, root:str, paths:list):
 	outPaths = []
 
 	for path in paths:
-		if not os.path.isabs(path):
+		if not os.path.isabs(path) or utils.fileIsDraft(configFile, path):
 			outPaths.append(path)
 			continue
 
@@ -149,7 +149,7 @@ def findFilesResursively(absPath: str):
 
 	return outFiles
 
-def buildTargetFileList(root:str, paths:list, recursive:bool):
+def buildTargetFileList(configFile, root:str, paths:list, recursive:bool):
 	filePaths = {}
 	ignoredPaths = {}
 
@@ -166,7 +166,8 @@ def buildTargetFileList(root:str, paths:list, recursive:bool):
 			resolvedPaths = findFilesInDirectory(absPath)
 
 		for resolvedPath in resolvedPaths:
-			filePaths[os.path.relpath(resolvedPath, root)] = True
+			pathKey = resolvedPath if utils.fileIsDraft(configFile, resolvedPath) else os.path.relpath(resolvedPath, root)
+			filePaths[pathKey] = True
 
 	return (list(filePaths.keys()), list(ignoredPaths.keys()))
 
@@ -387,8 +388,8 @@ def main():
 		args.output_root = configFile.getDJDirPath()
 
 	listFiles = utils.convertRelativePathsToAbsolute(args.input_root, args.listfile if args.listfile else [])
-	paths = prunePathsOutsideRoot(args.input_root, args.files + utils.parseAllLinesFromFiles(listFiles))
-	filesInInputRoot, ignoredFiles = buildTargetFileList(args.input_root, paths, args.recursive)
+	paths = prunePathsOutsideRoot(configFile, args.input_root, args.files + utils.parseAllLinesFromFiles(listFiles))
+	filesToProcess, ignoredFiles = buildTargetFileList(configFile, args.input_root, paths, args.recursive)
 
 	successfulTransfers = {}
 	failedTransfers = {}
@@ -396,11 +397,11 @@ def main():
 	for file in ignoredFiles:
 		addToResults(successfulTransfers, failedTransfers, TransferResult(TRANSFER_TYPE_UNKNOWN, file, "", TRANSFER_ERROR_INVALID_SOURCE))
 
-	for file in filesInInputRoot:
-		sourcePath = os.path.join(args.input_root, file)
+	for file in filesToProcess:
+		sourcePath = file if os.path.isabs(file) else os.path.join(args.input_root, file)
 
 		if utils.fileIsDraft(configFile, sourcePath):
-			destPath = os.path.join(args.output_root, "_Draft", file)
+			destPath = os.path.join(args.output_root, "_Draft", os.path.splitext(os.path.basename(sourcePath))[0] + ".mp3")
 		else:
 			destPath = os.path.join(args.output_root, file)
 
