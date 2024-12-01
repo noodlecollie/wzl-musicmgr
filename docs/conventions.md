@@ -40,7 +40,9 @@ Older CDJ controllers may only have three hot cue buttons available; therefore, 
 
 * **A:** One phrase before the main drop. Useful for mixing tracks with no breakdown in-between.
 * **B:** One phrase before the build-up to the main drop. Useful for mixing tracks where the breakdown of the outgoing track meshes with the build-up of the incoming track.
-* **C:** One phrase before the second drop, if this is usefully different from the first drop.
+* **C:** Flexible; one phrase before the second drop, if this is usefully different from the first drop, or even further back in the intro. Might also be assigned for set-specific cues.
+
+Additionally, hot cue **D** should be placed on the first drop of the track. This is useful for jumping directly to a section of the track where the volume can be metered, but can also be achieved using memory cues on older CDJ controllers.
 
 ## Hot Cue Colours
 

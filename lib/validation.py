@@ -8,8 +8,10 @@ MEDIA_FORMAT_LOSSLESS = [
 	".alac"
 ]
 
+# Formats we allow to be transcoded or copied
 MEDIA_FORMAT_ALLOWED = MEDIA_FORMAT_LOSSLESS + [".mp3"]
 
+# Formats to look for on disk
 ALL_MEDIA_FORMATS = MEDIA_FORMAT_ALLOWED + [
 	".ogg",
 	".wma",
@@ -78,8 +80,7 @@ def validateFile(filePath:str, logExceptions=True) -> list:
 
 		if extension not in MEDIA_FORMAT_ALLOWED:
 			validationErrors.append(UNSUPPORTED_FORMAT)
-
-		if extension != ".mp3":
+		elif extension != ".mp3":
 			validationErrors.append(NOT_AN_MP3)
 
 		if not exists:

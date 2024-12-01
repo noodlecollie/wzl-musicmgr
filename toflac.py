@@ -18,8 +18,9 @@ def parseArgs():
 	)
 
 	parser.add_argument(
-		"output",
-		help="Output file, or folder to output multiple files to."
+		"-o", "--output",
+		help="Output file, or folder to output multiple files to.",
+		required=False
 	)
 
 	return parser.parse_args()
@@ -30,6 +31,11 @@ def loadConfig():
 def convertSingleFile(configFile, input:str, output:str):
 	outputPath = output
 
+	if outputPath is None:
+		outputPath = os.path.dirname(input)
+	else:
+		outputPath = os.path.abspath(outputPath)
+
 	if not os.path.isfile(outputPath):
 		fileName = os.path.splitext(os.path.basename(input))[0]
 		outputPath = os.path.join(outputPath, fileName + ".flac")
@@ -38,7 +44,7 @@ def convertSingleFile(configFile, input:str, output:str):
 	ffmpeg.toFLAC(configFile, input, outputPath)
 
 def convertMultipleFiles(configFile, input:list, output:str):
-	if os.path.isfile(output):
+	if output is None or os.path.isfile(output):
 		raise ValueError("Output must be a directory when converting multiple input files")
 
 	if not os.path.isdir(output):
@@ -62,11 +68,6 @@ def convertMultipleFiles(configFile, input:list, output:str):
 def main():
 	args = parseArgs()
 	configFile = loadConfig()
-
-	if args.output is None:
-		args.output = os.getcwd()
-	else:
-		args.output = os.path.abspath(args.output)
 
 	if len(args.input) == 1 and os.path.isfile(args.input[0]):
 		convertSingleFile(configFile, os.path.abspath(args.input[0]), args.output)
