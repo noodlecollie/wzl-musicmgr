@@ -15,3 +15,13 @@ def toMP3(configFile:config.Config, inputFile:str, outputFile:str, quality:int=3
 		outputFile,
 		"-nostdin"
 	])
+
+def toFLAC(configFile:config.Config, inputFile:str, outputFile:str):
+	return runFFMPEG(configFile, [
+		"-i", inputFile,
+		"-c:a", "flac",
+		"-map_metadata", "0",
+		"-id3v2_version", "3",
+		outputFile,
+		"-nostdin"
+	])
