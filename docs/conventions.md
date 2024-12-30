@@ -27,6 +27,7 @@ Memory cue colours should be assigned to indicate the following:
 * <span style="background-color: #ff32e3">__</span> **Pink:** Drop, where big energy change is introduced.
 * <span style="background-color: #bc38ff">__</span> **Purple:** Equivalent of pink and orange combined: drop where the next memory cue is not on a phrase boundary.
 * <span style="background-color: #00c0f8">__</span> **Aqua:** This memory cue is not aligned to the expected beat grid, eg. for a track where the tempo varies.
+* <span style="background-color: #00ff00">__</span> **Green:** Potential point of interest, eg. vocal is introduced.
 
 # Hot Cues
 
