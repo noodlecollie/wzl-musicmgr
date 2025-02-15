@@ -55,9 +55,21 @@ def checkMissingFromEverything(library: MusicLibrary):
 
 	if missing:
 		print(len(missing), "tracks were missing from the 'Everything' playlist:")
+		grouped = library.group_tracks_by_artist(missing.keys())
 
-		for id in missing.keys():
-			print(f"  {library.track_desc_str(id)}")
+		for artist in grouped:
+			count = 0
+			for album in grouped[artist]:
+				count += len(grouped[artist][album])
+
+			print(artist, f"({count} tracks across {len(grouped[artist])} albums)")
+
+			for album in grouped[artist]:
+				print(f"  {album} ({len(grouped[artist][album])} tracks)")
+
+				for track in grouped[artist][album]:
+					print(f"    {track}")
+
 	else:
 		print("No tracks were missing from the 'Everything' playlist")
 

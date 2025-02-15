@@ -62,6 +62,27 @@ class MusicLibrary:
 		track = self.tracks_by_id([id], True)[0]
 		return f'"{track[KEY_TRACK_TITLE]}" by "{track[KEY_TRACK_ARTIST]}", from album "{track[KEY_TRACK_ALBUM]}"'
 
+	def group_tracks_by_artist(self, track_ids: list):
+		out = {}
+
+		for track in self.tracks_by_id(track_ids, True):
+			artist = track[KEY_TRACK_ARTIST]
+			album = track[KEY_TRACK_ALBUM]
+			title = track[KEY_TRACK_TITLE]
+
+			if artist not in out:
+				out[artist] = {}
+
+			out_artist = out[artist]
+
+			if album not in out_artist:
+				out_artist[album] = []
+
+			out_album = out_artist[album]
+			out_album.append(title)
+
+		return out
+
 	def __compute_playlist_path(root, item):
 		path = []
 
