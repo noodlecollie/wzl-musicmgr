@@ -2,6 +2,9 @@ import lxml.etree as ET
 
 KEY_NODE_TYPE = "Type"
 KEY_PLAYLIST_ENTRIES = "Entries"
+KEY_TRACK_TITLE = "Name"
+KEY_TRACK_ARTIST = "Artist"
+KEY_TRACK_ALBUM = "Album"
 
 NODE_TYPE_FOLDER = "0"
 NODE_TYPE_PLAYLIST = "1"
@@ -20,13 +23,12 @@ class MusicLibrary:
 			if item == playlist_root:
 				continue
 
-			data = dict(item.attrib)
-
-			if data[KEY_NODE_TYPE] == NODE_TYPE_PLAYLIST:
+			if item.attrib[KEY_NODE_TYPE] == NODE_TYPE_PLAYLIST:
+				data = dict(item.attrib)
 				data[KEY_PLAYLIST_ENTRIES] = [track.get("Key") for track in item.findall("TRACK")]
 
-			playlist_path = MusicLibrary.__compute_playlist_path(playlist_root, item)
-			self.playlists[playlist_path] = data
+				playlist_path = MusicLibrary.__compute_playlist_path(playlist_root, item)
+				self.playlists[playlist_path] = data
 
 	def playlist_paths(self):
 		return self.playlists.keys()
@@ -56,12 +58,15 @@ class MusicLibrary:
 
 		return tracks
 
+	def track_desc_str(self, id: str):
+		track = self.tracks_by_id([id], True)[0]
+		return f'"{track[KEY_TRACK_TITLE]}" by "{track[KEY_TRACK_ARTIST]}", from album "{track[KEY_TRACK_ALBUM]}"'
+
 	def __compute_playlist_path(root, item):
-		path = ""
+		path = []
 
 		while item != root:
-			name = item.get('Name').replace('|', '_')
-			path = f"{name}|{path}" if path else name
+			path = [item.get('Name')] + path
 			item = item.getparent()
 
-		return path
+		return tuple(path)

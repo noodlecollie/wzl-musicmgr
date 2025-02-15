@@ -3,7 +3,7 @@ from lib import id3
 
 def parseArgs():
 	parser = argparse.ArgumentParser(
-		"listtage",
+		"listtags",
 		description="Lists metadata tags on the specified file."
 	)
 
