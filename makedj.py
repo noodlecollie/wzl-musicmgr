@@ -105,7 +105,7 @@ def prunePathsOutsideRoot(configFile, root:str, paths:list):
 	return outPaths
 
 def fileTypeIsSupported(path:str):
-	return os.path.splitext(path)[1] in validation.ALL_MEDIA_FORMATS and not os.path.basename(path).startswith(".")
+	return os.path.splitext(path)[1].lower() in validation.ALL_MEDIA_FORMATS and not os.path.basename(path).startswith(".")
 
 def getExcludedFiles(dirPath:str):
 	if os.path.isfile(dirPath):
